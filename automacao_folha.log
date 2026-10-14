@@ -2845,3 +2845,2370 @@ Erro: KeyError('rev_fo')
 
 [16:00:10] Processando item: 1.187.1.01.0011 (REV.FO 10)
 [16:00:10] Subcentros válidos: CDPL01
+[07:34:00] Iniciando automação
+[07:34:00] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[07:34:01] PULADO (erro em execução anterior): 1.123.1.01.0047
+[07:34:01] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[07:34:01] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[07:34:01] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[07:34:01] Itens a processar: 2643 (já concluídos antes: 186)
+[07:34:01] Próximos itens: 1.187.1.01.0011, 1.123.1.01.0039, 1.195.1.05.1012, 1.187.1.02.0088, 1.83.1.01.0252
+[07:34:01] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[07:34:11] 
+Item: 1.187.1.01.0011
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[07:34:11] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[07:34:19] Iniciando automação
+[07:34:19] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[07:34:19] PULADO (erro em execução anterior): 1.123.1.01.0047
+[07:34:19] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[07:34:19] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[07:34:19] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[07:34:19] Itens a processar: 2643 (já concluídos antes: 186)
+[07:34:19] Próximos itens: 1.187.1.01.0011, 1.123.1.01.0039, 1.195.1.05.1012, 1.187.1.02.0088, 1.83.1.01.0252
+[07:34:19] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[07:34:29] 
+Item: 1.187.1.01.0011
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[07:34:29] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[07:34:48] Iniciando automação
+[07:34:48] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[07:34:48] PULADO (erro em execução anterior): 1.123.1.01.0047
+[07:34:48] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[07:34:48] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[07:34:48] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[07:34:48] Itens a processar: 2643 (já concluídos antes: 186)
+[07:34:48] Próximos itens: 1.187.1.01.0011, 1.123.1.01.0039, 1.195.1.05.1012, 1.187.1.02.0088, 1.83.1.01.0252
+[07:34:48] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[07:34:58] 
+Item: 1.187.1.01.0011
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[07:34:58] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[07:36:24] Iniciando automação
+[07:36:24] Planilha copiada em 0.0s
+[07:36:25] Aba encontrada: Ordem_mais_Produzida
+[07:36:25] Planilha lida em 1.1s (2941 linhas)
+[07:36:25] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[07:36:25] PULADO (erro em execução anterior): 1.123.1.01.0047
+[07:36:25] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[07:36:25] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[07:36:25] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[07:36:25] Itens a processar: 2643 (já concluídos antes: 186)
+[07:36:25] Próximos itens: 1.187.1.01.0011, 1.123.1.01.0039, 1.195.1.05.1012, 1.187.1.02.0088, 1.83.1.01.0252
+[07:36:25] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[07:36:35] Processando item: 1.187.1.01.0011 (REV.FO 10)
+[07:36:35] Subcentros válidos: CDPL01
+[07:36:47] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[07:36:47] Exclusão 1/2
+[07:37:12] 
+Item: 1.187.1.01.0011
+Subcentro: -
+Etapa: exclusão
+Erro: RuntimeError("Timeout esperando 'Atualiza Operações da Folha de Operação' fechar (fechar tela após OK)")
+[07:37:12] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[07:38:47] Iniciando automação
+[07:38:47] Planilha copiada em 0.0s
+[07:38:48] Aba encontrada: Ordem_mais_Produzida
+[07:38:48] Planilha lida em 1.2s (2941 linhas)
+[07:38:49] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[07:38:49] PULADO (erro em execução anterior): 1.123.1.01.0047
+[07:38:49] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[07:38:49] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[07:38:49] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[07:38:49] Itens a processar: 2643 (já concluídos antes: 186)
+[07:38:49] Próximos itens: 1.187.1.01.0011, 1.123.1.01.0039, 1.195.1.05.1012, 1.187.1.02.0088, 1.83.1.01.0252
+[07:38:49] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[07:38:59] Processando item: 1.187.1.01.0011 (REV.FO 10)
+[07:38:59] Subcentros válidos: CDPL01
+[07:39:11] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[07:39:11] Exclusão 1/2
+[07:39:16] Exclusão 2/2
+[07:39:24] Iniciando inclusão
+[07:39:24] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[07:39:57] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[07:40:34] Item finalizado
+
+[07:40:34] Processando item: 1.123.1.01.0039 (REV.FO 10)
+[07:40:34] Subcentros válidos: CDPL01, CDVD01
+[07:40:46] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:40:46] Exclusão 1/3
+[07:40:51] Exclusão 2/3
+[07:40:57] Exclusão 3/3
+[07:41:04] Iniciando inclusão
+[07:41:04] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,08, operadores 2)
+[07:41:38] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[07:42:12] Incluindo CCD (op 0.100, sub CCD, tempo 0,32, operadores 4)
+[07:42:48] Item finalizado
+
+[07:42:48] Processando item: 1.195.1.05.1012 (REV.FO 10)
+[07:42:48] Subcentros válidos: CDPL01, CDVD01
+[07:43:00] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:43:00] Exclusão 1/3
+[07:43:06] Exclusão 2/3
+[07:43:11] Exclusão 3/3
+[07:43:19] Iniciando inclusão
+[07:43:19] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,08, operadores 2)
+[07:43:52] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[07:44:26] Incluindo CCD (op 0.100, sub CCD, tempo 0,32, operadores 4)
+[07:45:03] Item finalizado
+
+[07:45:03] Processando item: 1.187.1.02.0088 (REV.FO None)
+[07:45:03] Subcentros válidos: CDPL01, CDVD02
+[07:45:10] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.0088)
+[07:45:13] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:45:13] Exclusão 1/3
+[07:45:19] Exclusão 2/3
+[07:45:24] Exclusão 3/3
+[07:45:32] Iniciando inclusão
+[07:45:32] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,09, operadores 2)
+[07:46:06] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[07:46:39] Incluindo CCD (op 0.100, sub CCD, tempo 0,22, operadores 3)
+[07:47:16] Item finalizado
+
+[07:47:16] Processando item: 1.83.1.01.0252 (REV.FO 10)
+[07:47:16] Subcentros válidos: CDPL01
+[07:47:28] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[07:47:28] Exclusão 1/2
+[07:47:33] Exclusão 2/2
+[07:47:41] Iniciando inclusão
+[07:47:41] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[07:48:14] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[07:48:51] Item finalizado
+
+[07:48:51] Processando item: 1.187.1.01.0090 (REV.FO None)
+[07:48:51] Subcentros válidos: CDPL01, CDVD02
+[07:48:58] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.0090)
+[07:49:02] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:49:02] Exclusão 1/3
+[07:49:07] Exclusão 2/3
+[07:49:13] Exclusão 3/3
+[07:49:20] Iniciando inclusão
+[07:49:20] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[07:49:54] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[07:50:28] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[07:51:04] Item finalizado
+
+[07:51:04] Processando item: 1.158.1.11.0107 (REV.FO None)
+[07:51:04] Subcentros válidos: CDPL, CDVD01
+[07:51:12] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.158.1.11.0107)
+[07:51:15] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:51:15] Exclusão 1/3
+[07:51:21] Exclusão 2/3
+[07:51:26] Exclusão 3/3
+[07:51:34] Iniciando inclusão
+[07:51:34] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[07:52:07] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,07, operadores 2)
+[07:52:41] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 4)
+[07:53:17] Item finalizado
+
+[07:53:17] Processando item: 1.158.1.11.0105 (REV.FO None)
+[07:53:17] Subcentros válidos: CDTE01, CDVD02
+[07:53:25] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.158.1.11.0105)
+[07:53:28] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:53:28] Exclusão 1/3
+[07:53:34] Exclusão 2/3
+[07:53:39] Exclusão 3/3
+[07:53:47] Iniciando inclusão
+[07:53:47] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,04, operadores 2)
+[07:54:20] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[07:54:54] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 3)
+[07:55:31] Item finalizado
+
+[07:55:31] Processando item: 1.187.1.02.0054 (REV.FO None)
+[07:55:31] Subcentros válidos: CDPL, CDVD01
+[07:55:38] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.0054)
+[07:55:41] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:55:41] Exclusão 1/3
+[07:55:47] Exclusão 2/3
+[07:55:52] Exclusão 3/3
+[07:56:00] Iniciando inclusão
+[07:56:00] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,10, operadores 2)
+[07:56:34] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,10, operadores 2)
+[07:57:07] Incluindo CCD (op 0.100, sub CCD, tempo 0,40, operadores 4)
+[07:57:44] Item finalizado
+
+[07:57:44] Processando item: 1.187.1.01.0089 (REV.FO None)
+[07:57:44] Subcentros válidos: CDPL01, CDVD02
+[07:57:51] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.0089)
+[07:57:54] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[07:57:54] Exclusão 1/3
+[07:58:00] Exclusão 2/3
+[07:58:05] Exclusão 3/3
+[07:58:13] Iniciando inclusão
+[07:58:13] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[07:58:47] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[07:59:20] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[07:59:57] Item finalizado
+
+[07:59:57] Processando item: 1.122.1.02.3024 (REV.FO 10)
+[07:59:57] Subcentros válidos: CDTE01
+[08:00:09] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[08:00:09] Exclusão 1/2
+[08:00:14] Exclusão 2/2
+[08:00:22] Iniciando inclusão
+[08:00:22] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,05, operadores 2)
+[08:00:56] Incluindo CCD (op 0.100, sub CCD, tempo 0,10, operadores 2)
+[08:01:32] Item finalizado
+
+[08:01:32] Processando item: 1.187.1.02.0034 (REV.FO None)
+[08:01:32] Subcentros válidos: CDPL, CDVD01
+[08:01:39] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.0034)
+[08:01:43] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:01:43] Exclusão 1/3
+[08:01:48] Exclusão 2/3
+[08:01:54] Exclusão 3/3
+[08:02:02] Iniciando inclusão
+[08:02:02] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,10, operadores 2)
+[08:02:35] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,10, operadores 2)
+[08:03:09] Incluindo CCD (op 0.100, sub CCD, tempo 0,40, operadores 4)
+[08:03:45] Item finalizado
+
+[08:03:45] Processando item: 1.188.1.02.1024 (REV.FO 10)
+[08:03:45] Subcentros válidos: CDTE01, CDVD01
+[08:03:57] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:03:57] Exclusão 1/3
+[08:04:03] Exclusão 2/3
+[08:04:08] Exclusão 3/3
+[08:04:16] Iniciando inclusão
+[08:04:16] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,06, operadores 2)
+[08:04:49] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[08:05:23] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 4)
+[08:06:00] Item finalizado
+
+[08:06:00] Processando item: 1.078.0.00.0256 (REV.FO 10)
+[08:06:00] Subcentros válidos: CDPL
+[08:06:12] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[08:06:12] Exclusão 1/2
+[08:06:17] Exclusão 2/2
+[08:06:25] Iniciando inclusão
+[08:06:25] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[08:06:58] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[08:07:35] Item finalizado
+
+[08:07:35] Processando item: 1.187.1.02.1516 (REV.FO 10)
+[08:07:35] Subcentros válidos: CDPL, CDCA01
+[08:07:47] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:07:47] Exclusão 1/3
+[08:07:52] Exclusão 2/3
+[08:07:58] Exclusão 3/3
+[08:08:05] Iniciando inclusão
+[08:08:05] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,10, operadores 2)
+[08:08:39] Incluindo CDCA01 (op 0.020, sub CDCA01, tempo 0,12, operadores 2)
+[08:09:12] Incluindo CCD (op 0.100, sub CCD, tempo 0,44, operadores 4)
+[08:09:49] Item finalizado
+
+[08:09:49] Processando item: 1.123.1.03.3012 (REV.FO None)
+[08:09:49] Subcentros válidos: CDPL, CDOX
+[08:09:56] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.123.1.03.3012)
+[08:10:00] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:10:00] Exclusão 1/3
+[08:10:05] Exclusão 2/3
+[08:10:11] Exclusão 3/3
+[08:10:18] Iniciando inclusão
+[08:10:18] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[08:10:52] Incluindo CDOX (op 0.020, sub CDOX, tempo 0,14, operadores 1)
+[08:11:25] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 3)
+[08:12:02] Item finalizado
+
+[08:12:02] Processando item: 1.123.1.03.3013 (REV.FO None)
+[08:12:02] Subcentros válidos: CDPL, CDOX
+[08:12:09] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.123.1.03.3013)
+[08:12:13] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:12:13] Exclusão 1/3
+[08:12:18] Exclusão 2/3
+[08:12:24] Exclusão 3/3
+[08:12:31] Iniciando inclusão
+[08:12:31] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,08, operadores 2)
+[08:13:05] Incluindo CDOX (op 0.020, sub CDOX, tempo 0,14, operadores 1)
+[08:13:38] Incluindo CCD (op 0.100, sub CCD, tempo 0,30, operadores 3)
+[08:14:15] Item finalizado
+
+[08:14:15] Processando item: 1.187.1.01.0036 (REV.FO 10)
+[08:14:15] Subcentros válidos: CDTE01, CDCA01
+[08:14:27] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:14:27] Exclusão 1/3
+[08:14:32] Exclusão 2/3
+[08:14:38] Exclusão 3/3
+[08:14:45] Iniciando inclusão
+[08:14:45] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,10, operadores 2)
+[08:15:19] Incluindo CDCA01 (op 0.020, sub CDCA01, tempo 0,16, operadores 2)
+[08:15:52] Incluindo CCD (op 0.100, sub CCD, tempo 0,52, operadores 4)
+[08:16:29] Item finalizado
+
+[08:16:29] Processando item: 1.078.0.00.9014 (REV.FO None)
+[08:16:29] Subcentros válidos: CDPL01, CDVD02
+[08:16:36] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9014)
+[08:16:40] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:16:40] Exclusão 1/3
+[08:16:45] Exclusão 2/3
+[08:16:51] Exclusão 3/3
+[08:16:58] Iniciando inclusão
+[08:16:58] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[08:17:32] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[08:18:05] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 3)
+[08:18:42] Item finalizado
+
+[08:18:42] Processando item: 1.078.0.00.0255 (REV.FO 10)
+[08:18:42] Subcentros válidos: CDPL
+[08:18:54] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[08:18:54] Exclusão 1/2
+[08:18:59] Exclusão 2/2
+[08:19:07] Iniciando inclusão
+[08:19:07] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[08:19:41] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[08:20:17] Item finalizado
+
+[08:20:17] Processando item: 1.158.1.04.4011 (REV.FO 10)
+[08:20:17] Subcentros válidos: CDPL01, CDVD02
+[08:20:29] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:20:29] Exclusão 1/3
+[08:20:34] Exclusão 2/3
+[08:20:40] Exclusão 3/3
+[08:20:48] Iniciando inclusão
+[08:20:48] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[08:21:21] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[08:21:55] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[08:22:31] Item finalizado
+
+[08:22:31] Processando item: 1.187.1.02.1517 (REV.FO 10)
+[08:22:31] Subcentros válidos: CDPL01, CDCA02
+[08:22:43] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:22:43] Exclusão 1/3
+[08:22:49] Exclusão 2/3
+[08:22:54] Exclusão 3/3
+[08:23:02] Iniciando inclusão
+[08:23:02] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,08, operadores 2)
+[08:23:35] Incluindo CDCA02 (op 0.020, sub CDCA02, tempo 0,10, operadores 2)
+[08:24:09] Incluindo CCD (op 0.100, sub CCD, tempo 0,36, operadores 4)
+[08:24:46] Item finalizado
+
+[08:24:46] Processando item: 1.158.1.04.4010 (REV.FO 10)
+[08:24:46] Subcentros válidos: CDPL01, CDVD02
+[08:24:58] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:24:58] Exclusão 1/3
+[08:25:03] Exclusão 2/3
+[08:25:09] Exclusão 3/3
+[08:25:16] Iniciando inclusão
+[08:25:16] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[08:25:50] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[08:26:23] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[08:27:00] Item finalizado
+
+[08:27:00] Processando item: 1.187.1.01.1011 (REV.FO 10)
+[08:27:00] Subcentros válidos: CDPL01, CDCA01
+[08:27:12] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:27:12] Exclusão 1/3
+[08:27:17] Exclusão 2/3
+[08:27:23] Exclusão 3/3
+[08:27:31] Iniciando inclusão
+[08:27:31] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,11, operadores 2)
+[08:28:04] Incluindo CDCA01 (op 0.020, sub CDCA01, tempo 0,23, operadores 2)
+[08:28:38] Incluindo CCD (op 0.100, sub CCD, tempo 0,68, operadores 4)
+[08:29:14] Item finalizado
+
+[08:29:14] Processando item: 1.132.1.11.0060 (REV.FO 10)
+[08:29:14] Subcentros válidos: CDPL, CDVD02
+[08:29:26] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:29:26] Exclusão 1/3
+[08:29:32] Exclusão 2/3
+[08:29:37] Exclusão 3/3
+[08:29:45] Iniciando inclusão
+[08:29:45] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[08:30:18] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[08:30:52] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[08:31:28] Item finalizado
+
+[08:31:28] Processando item: 1.111.1.02.3211 (REV.FO 10)
+[08:31:28] Subcentros válidos: CDSE
+[08:31:40] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[08:31:40] Exclusão 1/2
+[08:31:46] Exclusão 2/2
+[08:31:53] Iniciando inclusão
+[08:31:53] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,03, operadores 1)
+[08:32:27] Incluindo CCD (op 0.100, sub CCD, tempo 0,03, operadores 1)
+[08:33:03] Item finalizado
+
+[08:33:03] Processando item: 1.183.1.01.0224 (REV.FO None)
+[08:33:03] Subcentros válidos: CDPL01, CDVD02
+[08:33:11] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.183.1.01.0224)
+[08:33:14] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[08:33:14] Exclusão 1/3
+[08:33:58] 
+Item: 1.183.1.01.0224
+Subcentro: -
+Etapa: exclusão
+Erro: RuntimeError("Timeout esperando 'Aviso' fechar (fechar aviso após confirmar)")
+[08:33:58] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:16:00] Iniciando automação
+[09:16:00] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:16:00] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:16:00] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:16:00] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:16:00] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:16:00] Itens a processar: 2617 (já concluídos antes: 212)
+[09:16:00] Próximos itens: 1.183.1.01.0224, 1.158.1.01.3527, 1.187.1.01.0018, 1.187.1.02.0067, 1.187.1.01.1092
+[09:16:00] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:16:10] 
+Item: 1.183.1.01.0224
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[09:16:10] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:16:24] Iniciando automação
+[09:16:24] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:16:24] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:16:24] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:16:24] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:16:24] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:16:24] Itens a processar: 2617 (já concluídos antes: 212)
+[09:16:24] Próximos itens: 1.183.1.01.0224, 1.158.1.01.3527, 1.187.1.01.0018, 1.187.1.02.0067, 1.187.1.01.1092
+[09:16:24] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:16:34] 
+Item: 1.183.1.01.0224
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[09:16:34] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:17:53] Iniciando automação
+[09:17:53] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:17:53] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:17:53] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:17:53] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:17:53] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:17:53] Itens a processar: 2617 (já concluídos antes: 212)
+[09:17:53] Próximos itens: 1.183.1.01.0224, 1.158.1.01.3527, 1.187.1.01.0018, 1.187.1.02.0067, 1.187.1.01.1092
+[09:17:53] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:18:03] 
+Item: 1.183.1.01.0224
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[09:18:03] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:18:16] Iniciando automação
+[09:18:16] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:18:16] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:18:16] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:18:16] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:18:16] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:18:16] Itens a processar: 2617 (já concluídos antes: 212)
+[09:18:16] Próximos itens: 1.183.1.01.0224, 1.158.1.01.3527, 1.187.1.01.0018, 1.187.1.02.0067, 1.187.1.01.1092
+[09:18:16] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:18:26] 
+Item: 1.183.1.01.0224
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[09:18:26] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:20:22] Iniciando automação
+[09:20:22] Planilha copiada em 0.0s
+[09:20:23] Aba encontrada: Ordem_mais_Produzida
+[09:20:23] Planilha lida em 1.0s (2941 linhas)
+[09:20:23] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[09:20:23] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:20:23] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:20:23] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:20:23] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:20:23] Itens a processar: 2617 (já concluídos antes: 212)
+[09:20:23] Próximos itens: 1.183.1.01.0224, 1.158.1.01.3527, 1.187.1.01.0018, 1.187.1.02.0067, 1.187.1.01.1092
+[09:20:23] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:20:33] Processando item: 1.183.1.01.0224 (REV.FO None)
+[09:20:33] Subcentros válidos: CDPL01, CDVD02
+[09:20:41] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.183.1.01.0224)
+[09:20:44] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:20:44] Exclusão 1/3
+[09:20:51] Exclusão 2/3
+[09:20:56] Exclusão 3/3
+[09:21:04] Iniciando inclusão
+[09:21:04] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[09:21:38] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[09:22:11] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[09:22:48] Item finalizado
+
+[09:22:48] Processando item: 1.158.1.01.3527 (REV.FO 10)
+[09:22:48] Subcentros válidos: CDTE01, CDVD01
+[09:23:00] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:23:00] Exclusão 1/3
+[09:23:05] Exclusão 2/3
+[09:23:11] Exclusão 3/3
+[09:23:18] Iniciando inclusão
+[09:23:18] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,06, operadores 2)
+[09:23:52] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,09, operadores 2)
+[09:24:26] Incluindo CCD (op 0.100, sub CCD, tempo 0,30, operadores 4)
+[09:25:02] Item finalizado
+
+[09:25:02] Processando item: 1.187.1.01.0018 (REV.FO 10)
+[09:25:02] Subcentros válidos: CDPL01
+[09:25:14] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:25:14] Exclusão 1/2
+[09:25:20] Exclusão 2/2
+[09:25:27] Iniciando inclusão
+[09:25:27] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[09:26:01] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[09:26:38] Item finalizado
+
+[09:26:38] Processando item: 1.187.1.02.0067 (REV.FO 10)
+[09:26:38] Subcentros válidos: CDPL01, CDVD02
+[09:26:49] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:26:49] Exclusão 1/3
+[09:26:55] Exclusão 2/3
+[09:27:01] Exclusão 3/3
+[09:27:08] Iniciando inclusão
+[09:27:08] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[09:27:42] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[09:28:16] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[09:28:52] Item finalizado
+
+[09:28:52] Processando item: 1.187.1.01.1092 (REV.FO 1)
+[09:28:52] Subcentros válidos: CDPL
+[09:29:04] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:29:04] Exclusão 1/2
+[09:29:09] Exclusão 2/2
+[09:29:17] Iniciando inclusão
+[09:29:17] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[09:29:51] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[09:30:27] Item finalizado
+
+[09:30:27] Processando item: 1.187.1.02.0066 (REV.FO 10)
+[09:30:27] Subcentros válidos: CDPL01, CDVD02
+[09:30:39] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:30:39] Exclusão 1/3
+[09:30:45] Exclusão 2/3
+[09:30:50] Exclusão 3/3
+[09:30:58] Iniciando inclusão
+[09:30:58] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[09:31:31] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[09:32:05] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[09:32:42] Item finalizado
+
+[09:32:42] Processando item: 1.187.1.02.0086 (REV.FO None)
+[09:32:42] Subcentros válidos: CDPL
+[09:32:44] 
+Item: 1.187.1.02.0086
+Subcentro: -
+Etapa: selecionar produto
+Erro: FailSafeException('PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.')
+[09:32:44] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:34:19] Iniciando automação
+[09:34:19] Planilha copiada em 0.0s
+[09:34:19] Aba encontrada: Ordem_mais_Produzida
+[09:34:20] Planilha lida em 1.1s (2941 linhas)
+[09:34:20] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[09:34:20] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:34:20] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:34:20] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:34:20] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:34:20] Itens a processar: 2611 (já concluídos antes: 218)
+[09:34:20] Próximos itens: 1.187.1.02.0086, 1.04.1.01.0159, 1.187.1.02.0038, 1.078.0.00.9020, 1.187.1.01.1515
+[09:34:20] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:34:30] Processando item: 1.187.1.02.0086 (REV.FO None)
+[09:34:30] Subcentros válidos: CDPL
+[09:34:37] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.0086)
+[09:34:41] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:34:41] Exclusão 1/2
+[09:34:46] Exclusão 2/2
+[09:34:54] Iniciando inclusão
+[09:34:54] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[09:35:27] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[09:36:04] Item finalizado
+
+[09:36:04] Processando item: 1.04.1.01.0159 (REV.FO 10)
+[09:36:04] Subcentros válidos: CDPL02
+[09:36:16] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:36:16] Exclusão 1/2
+[09:36:21] Exclusão 2/2
+[09:36:29] Iniciando inclusão
+[09:36:29] Incluindo CDPL02 (op 0.010, sub CDPL02, tempo 0,06, operadores 2)
+[09:37:02] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[09:37:39] Item finalizado
+
+[09:37:39] Processando item: 1.187.1.02.0038 (REV.FO 10)
+[09:37:39] Subcentros válidos: CDPL01
+[09:37:51] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:37:51] Exclusão 1/2
+[09:37:56] Exclusão 2/2
+[09:38:04] Iniciando inclusão
+[09:38:04] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[09:38:37] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[09:39:14] Item finalizado
+
+[09:39:14] Processando item: 1.078.0.00.9020 (REV.FO None)
+[09:39:14] Subcentros válidos: CDSE
+[09:39:21] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9020)
+[09:39:25] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:39:25] Exclusão 1/2
+[09:39:30] Exclusão 2/2
+[09:39:38] Iniciando inclusão
+[09:39:38] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,04, operadores 1)
+[09:40:11] Incluindo CCD (op 0.100, sub CCD, tempo 0,04, operadores 1)
+[09:40:48] Item finalizado
+
+[09:40:48] Processando item: 1.187.1.01.1515 (REV.FO 10)
+[09:40:48] Subcentros válidos: CDPL01, CDVD01
+[09:41:00] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:41:00] Exclusão 1/3
+[09:41:05] Exclusão 2/3
+[09:41:11] Exclusão 3/3
+[09:41:18] Iniciando inclusão
+[09:41:18] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[09:41:52] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,09, operadores 2)
+[09:42:26] Incluindo CCD (op 0.100, sub CCD, tempo 0,32, operadores 4)
+[09:43:02] Item finalizado
+
+[09:43:02] Processando item: 1.187.1.01.1514 (REV.FO 10)
+[09:43:02] Subcentros válidos: CDPL01, CDVD01
+[09:43:14] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:43:14] Exclusão 1/3
+[09:43:20] Exclusão 2/3
+[09:43:25] Exclusão 3/3
+[09:43:33] Iniciando inclusão
+[09:43:33] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[09:44:07] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,10, operadores 2)
+[09:44:40] Incluindo CCD (op 0.100, sub CCD, tempo 0,34, operadores 4)
+[09:45:17] Item finalizado
+
+[09:45:17] Processando item: 1.187.1.01.1512 (REV.FO None)
+[09:45:17] Subcentros válidos: CDPL
+[09:45:24] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.1512)
+[09:45:27] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:45:27] Exclusão 1/2
+[09:45:33] Exclusão 2/2
+[09:45:40] Iniciando inclusão
+[09:45:40] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,08, operadores 2)
+[09:46:14] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 2)
+[09:46:50] Item finalizado
+
+[09:46:50] Processando item: 1.078.0.00.9047 (REV.FO None)
+[09:46:50] Subcentros válidos: CDPL, CDVD01, CDFR
+[09:46:58] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9047)
+[09:47:01] Iniciando exclusão: 3 subcentros + extras ['CCD'] = 4
+[09:47:01] Exclusão 1/4
+[09:47:07] Exclusão 2/4
+[09:47:12] Exclusão 3/4
+[09:47:18] Exclusão 4/4
+[09:47:25] Iniciando inclusão
+[09:47:25] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[09:47:59] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[09:48:33] Incluindo CDFR (op 0.030, sub CDFR, tempo 0,19, operadores 1)
+[09:49:06] Incluindo CCD (op 0.100, sub CCD, tempo 0,47, operadores 5)
+[09:49:42] Item finalizado
+
+[09:49:42] Processando item: 1.123.1.01.0016 (REV.FO 10)
+[09:49:42] Subcentros válidos: CDTE01, CDVD01
+[09:49:54] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[09:49:54] Exclusão 1/3
+[09:50:00] Exclusão 2/3
+[09:50:05] Exclusão 3/3
+[09:50:13] Iniciando inclusão
+[09:50:13] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,06, operadores 2)
+[09:50:47] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,10, operadores 2)
+[09:51:20] Incluindo CCD (op 0.100, sub CCD, tempo 0,32, operadores 4)
+[09:51:57] Item finalizado
+
+[09:51:57] Processando item: 1.183.1.11.0089 (REV.FO None)
+[09:51:57] Subcentros válidos: CDPL
+[09:52:04] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.183.1.11.0089)
+[09:52:08] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[09:52:08] Exclusão 1/2
+[09:52:13] Exclusão 2/2
+[09:52:21] Iniciando inclusão
+[09:52:21] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[09:52:54] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[09:53:31] Item finalizado
+
+[09:53:31] Processando item: 1.132.1.01.3015 (REV.FO 10)
+[09:53:31] Subcentros válidos: CDSE, CDPL01, CDCA01
+[09:53:33] 
+Item: 1.132.1.01.3015
+Subcentro: -
+Etapa: selecionar produto
+Erro: FailSafeException('PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.')
+[09:53:33] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:57:02] Iniciando automação
+[09:57:02] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:57:02] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:57:02] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:57:02] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:57:02] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:57:02] Itens a processar: 2601 (já concluídos antes: 228)
+[09:57:02] Próximos itens: 1.132.1.01.3015, 1.83.1.03.0007, 1.187.1.01.1031, 1.078.0.00.9025, 1.187.1.01.1019
+[09:57:02] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:57:12] 
+Item: 1.132.1.01.3015
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[09:57:12] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:59:30] Iniciando automação
+[09:59:30] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:59:30] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:59:30] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:59:30] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:59:30] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:59:30] Itens a processar: 2601 (já concluídos antes: 228)
+[09:59:30] Próximos itens: 1.132.1.01.3015, 1.83.1.03.0007, 1.187.1.01.1031, 1.078.0.00.9025, 1.187.1.01.1019
+[09:59:30] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[09:59:40] 
+Item: 1.132.1.01.3015
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[09:59:40] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[09:59:58] Iniciando automação
+[09:59:58] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[09:59:58] PULADO (erro em execução anterior): 1.123.1.01.0047
+[09:59:58] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[09:59:58] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[09:59:58] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[09:59:59] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[09:59:59] Itens a processar: 2601 (já concluídos antes: 228)
+[09:59:59] Próximos itens: 1.132.1.01.3015, 1.83.1.03.0007, 1.187.1.01.1031, 1.078.0.00.9025, 1.187.1.01.1019
+[09:59:59] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:00:09] 
+Item: 1.132.1.01.3015
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[10:00:09] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:00:34] Iniciando automação
+[10:00:34] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[10:00:34] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:00:34] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:00:34] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:00:34] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:00:34] Itens a processar: 2601 (já concluídos antes: 228)
+[10:00:34] Próximos itens: 1.132.1.01.3015, 1.83.1.03.0007, 1.187.1.01.1031, 1.078.0.00.9025, 1.187.1.01.1019
+[10:00:34] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:00:44] 
+Item: 1.132.1.01.3015
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[10:00:44] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:00:56] Iniciando automação
+[10:00:56] Planilha copiada em 0.0s
+[10:00:57] Aba encontrada: Ordem_mais_Produzida
+[10:00:57] Planilha lida em 1.2s (2941 linhas)
+[10:00:57] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[10:00:57] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:00:57] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:00:57] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:00:57] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:00:57] Itens a processar: 2601 (já concluídos antes: 228)
+[10:00:57] Próximos itens: 1.132.1.01.3015, 1.83.1.03.0007, 1.187.1.01.1031, 1.078.0.00.9025, 1.187.1.01.1019
+[10:00:57] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:01:07] Processando item: 1.132.1.01.3015 (REV.FO 10)
+[10:01:07] Subcentros válidos: CDSE, CDPL01, CDCA01
+[10:01:19] Iniciando exclusão: 3 subcentros + extras ['CCD'] = 4
+[10:01:19] Exclusão 1/4
+[10:01:25] Exclusão 2/4
+[10:01:31] Exclusão 3/4
+[10:01:37] Exclusão 4/4
+[10:01:44] Iniciando inclusão
+[10:01:44] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,18, operadores 1)
+[10:02:18] Incluindo CDPL01 (op 0.020, sub CDPL01, tempo 0,09, operadores 2)
+[10:02:51] Incluindo CDCA01 (op 0.030, sub CDCA01, tempo 0,22, operadores 2)
+[10:03:25] Incluindo CCD (op 0.100, sub CCD, tempo 0,80, operadores 5)
+[10:04:01] Item finalizado
+
+[10:04:01] Processando item: 1.83.1.03.0007 (REV.FO 10)
+[10:04:01] Subcentros válidos: CDPL01
+[10:04:13] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:04:13] Exclusão 1/2
+[10:04:19] Exclusão 2/2
+[10:04:26] Iniciando inclusão
+[10:04:26] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,08, operadores 2)
+[10:05:00] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 2)
+[10:05:37] Item finalizado
+
+[10:05:37] Processando item: 1.187.1.01.1031 (REV.FO 10)
+[10:05:37] Subcentros válidos: CDPL01, CDVD02
+[10:05:49] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:05:49] Exclusão 1/3
+[10:05:54] Exclusão 2/3
+[10:06:00] Exclusão 3/3
+[10:06:07] Iniciando inclusão
+[10:06:07] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[10:06:41] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[10:07:15] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[10:07:51] Item finalizado
+
+[10:07:51] Processando item: 1.078.0.00.9025 (REV.FO None)
+[10:07:51] Subcentros válidos: CDTE01, CDVD01, CDVD02
+[10:07:58] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9025)
+[10:08:02] Iniciando exclusão: 3 subcentros + extras ['CCD'] = 4
+[10:08:02] Exclusão 1/4
+[10:08:07] Exclusão 2/4
+[10:08:13] Exclusão 3/4
+[10:08:18] Exclusão 4/4
+[10:08:26] Iniciando inclusão
+[10:08:26] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,07, operadores 2)
+[10:09:00] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[10:09:33] Incluindo CDVD02 (op 0.030, sub CDVD02, tempo 0,05, operadores 1)
+[10:10:07] Incluindo CCD (op 0.100, sub CCD, tempo 0,35, operadores 5)
+[10:10:43] Item finalizado
+
+[10:10:43] Processando item: 1.187.1.01.1019 (REV.FO 10)
+[10:10:43] Subcentros válidos: CDPL01, CDVD02
+[10:10:55] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:10:55] Exclusão 1/3
+[10:11:01] Exclusão 2/3
+[10:11:07] Exclusão 3/3
+[10:11:14] Iniciando inclusão
+[10:11:14] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[10:11:48] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[10:12:21] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[10:12:58] Item finalizado
+
+[10:12:58] Processando item: 1.187.1.02.0082 (REV.FO None)
+[10:12:58] Subcentros válidos: CDPL01, CDVD02
+[10:13:05] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.0082)
+[10:13:09] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:13:09] Exclusão 1/3
+[10:13:14] Exclusão 2/3
+[10:13:20] Exclusão 3/3
+[10:13:27] Iniciando inclusão
+[10:13:27] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[10:14:01] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[10:14:35] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[10:15:11] Item finalizado
+
+[10:15:11] Processando item: 1.187.1.02.0081 (REV.FO None)
+[10:15:11] Subcentros válidos: CDPL01, CDVD02
+[10:15:18] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.0081)
+[10:15:22] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:15:22] Exclusão 1/3
+[10:15:27] Exclusão 2/3
+[10:15:33] Exclusão 3/3
+[10:15:40] Iniciando inclusão
+[10:15:40] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[10:16:14] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[10:16:48] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[10:17:24] Item finalizado
+
+[10:17:24] Processando item: 1.188.1.02.1010 (REV.FO 10)
+[10:17:24] Subcentros válidos: CDSE
+[10:17:36] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:17:36] Exclusão 1/2
+[10:17:42] Exclusão 2/2
+[10:17:49] Iniciando inclusão
+[10:17:49] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,19, operadores 1)
+[10:18:23] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 1)
+[10:18:59] Item finalizado
+
+[10:18:59] Processando item: 1.184.1.14.1029 (REV.FO None)
+[10:18:59] Subcentros válidos: CDPL, CDVD01
+[10:19:07] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.184.1.14.1029)
+[10:19:10] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:19:10] Exclusão 1/3
+[10:19:10] 
+Item: 1.184.1.14.1029
+Subcentro: -
+Etapa: exclusão
+Erro: FailSafeException('PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.')
+[10:19:10] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:24:48] Iniciando automação
+[10:24:48] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[10:24:48] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:24:48] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:24:48] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:24:48] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:24:48] Itens a processar: 2593 (já concluídos antes: 236)
+[10:24:48] Próximos itens: 1.184.1.14.1029, 1.187.1.01.0041, 1.187.1.01.1511, 1.184.1.14.1030, 1.187.1.03.1002
+[10:24:48] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:24:58] 
+Item: 1.184.1.14.1029
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[10:24:58] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:25:55] Iniciando automação
+[10:25:55] Planilha copiada em 0.0s
+[10:25:56] Aba encontrada: Ordem_mais_Produzida
+[10:25:56] Planilha lida em 1.2s (2941 linhas)
+[10:25:57] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[10:25:57] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:25:57] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:25:57] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:25:57] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:25:57] Itens a processar: 2593 (já concluídos antes: 236)
+[10:25:57] Próximos itens: 1.184.1.14.1029, 1.187.1.01.0041, 1.187.1.01.1511, 1.184.1.14.1030, 1.187.1.03.1002
+[10:25:57] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:26:07] Processando item: 1.184.1.14.1029 (REV.FO None)
+[10:26:07] Subcentros válidos: CDPL, CDVD01
+[10:26:14] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.184.1.14.1029)
+[10:26:17] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:26:17] Exclusão 1/3
+[10:26:23] Exclusão 2/3
+[10:26:29] Exclusão 3/3
+[10:26:36] Iniciando inclusão
+[10:26:36] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[10:27:10] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,07, operadores 2)
+[10:27:43] Incluindo CCD (op 0.100, sub CCD, tempo 0,26, operadores 4)
+[10:28:20] Item finalizado
+
+[10:28:20] Processando item: 1.187.1.01.0041 (REV.FO 10)
+[10:28:20] Subcentros válidos: CDTE01
+[10:28:32] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:28:32] Exclusão 1/2
+[10:28:37] Exclusão 2/2
+[10:28:45] Iniciando inclusão
+[10:28:45] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,05, operadores 2)
+[10:29:18] Incluindo CCD (op 0.100, sub CCD, tempo 0,10, operadores 2)
+[10:29:55] Item finalizado
+
+[10:29:55] Processando item: 1.187.1.01.1511 (REV.FO 10)
+[10:29:55] Subcentros válidos: CDPL
+[10:30:07] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:30:07] Exclusão 1/2
+[10:30:12] Exclusão 2/2
+[10:30:20] Iniciando inclusão
+[10:30:20] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,09, operadores 2)
+[10:30:54] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 2)
+[10:31:30] Item finalizado
+
+[10:31:30] Processando item: 1.184.1.14.1030 (REV.FO None)
+[10:31:30] Subcentros válidos: CDPL
+[10:31:37] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.184.1.14.1030)
+[10:31:41] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:31:41] Exclusão 1/2
+[10:31:46] Exclusão 2/2
+[10:31:54] Iniciando inclusão
+[10:31:54] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[10:32:27] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[10:33:04] Item finalizado
+
+[10:33:04] Processando item: 1.187.1.03.1002 (REV.FO 10)
+[10:33:04] Subcentros válidos: CDTE01
+[10:33:16] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:33:16] Exclusão 1/2
+[10:33:21] Exclusão 2/2
+[10:33:29] Iniciando inclusão
+[10:33:29] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,09, operadores 2)
+[10:34:03] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 2)
+[10:34:39] Item finalizado
+
+[10:34:39] Processando item: 1.04.1.03.0027 (REV.FO 10)
+[10:34:39] Subcentros válidos: CDPL, CDPL01
+[10:34:51] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:34:51] Exclusão 1/3
+[10:34:56] Exclusão 2/3
+[10:35:02] Exclusão 3/3
+[10:35:24] 
+Item: 1.04.1.03.0027
+Subcentro: -
+Etapa: exclusão
+Erro: RuntimeError("Timeout esperando 'Atualiza Operações da Folha de Operação' abrir (abrir tela de exclusão)")
+[10:35:24] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:41:25] Iniciando automação
+[10:41:25] Planilha copiada em 0.0s
+[10:41:26] Aba encontrada: Ordem_mais_Produzida
+[10:41:26] Planilha lida em 1.1s (2941 linhas)
+[10:41:26] Planilha carregada. Itens válidos: 2850 | linhas ignoradas: 2
+[10:41:26] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:41:26] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:41:26] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:41:26] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:41:27] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:41:27] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:41:27] Itens a processar: 2588 (já concluídos antes: 241)
+[10:41:27] Próximos itens: 1.04.1.03.0027, 1.183.1.01.0226, 1.112.1.11.0288, 1.195.1.01.0075, 1.123.1.02.9711
+[10:41:27] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:41:37] Processando item: 1.04.1.03.0027 (REV.FO 10)
+[10:41:37] Subcentros válidos: CDPL, CDPL01
+[10:41:48] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:41:48] Exclusão 1/3
+[10:41:54] Exclusão 2/3
+[10:42:00] Exclusão 3/3
+[10:42:07] Iniciando inclusão
+[10:42:07] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[10:42:41] Incluindo CDPL01 (op 0.020, sub CDPL01, tempo 0,06, operadores 2)
+[10:43:14] Incluindo CCD (op 0.100, sub CCD, tempo 0,24, operadores 4)
+[10:43:51] Item finalizado
+
+[10:43:51] Processando item: 1.183.1.01.0226 (REV.FO None)
+[10:43:51] Subcentros válidos: CDPL, CDVD02
+[10:43:58] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.183.1.01.0226)
+[10:44:02] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[10:44:02] Exclusão 1/3
+[10:44:07] Exclusão 2/3
+[10:44:13] Exclusão 3/3
+[10:44:20] Iniciando inclusão
+[10:44:20] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[10:44:54] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[10:45:27] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[10:46:04] Item finalizado
+
+[10:46:04] Processando item: 1.112.1.11.0288 (REV.FO 10)
+[10:46:04] Subcentros válidos: CDPL
+[10:46:16] Iniciando exclusão: 1 subcentros + extras ['KANBAN', 'CCD'] = 3
+[10:46:16] Exclusão 1/3
+[10:46:21] Exclusão 2/3
+[10:46:27] Exclusão 3/3
+[10:46:55] 
+Item: 1.112.1.11.0288
+Subcentro: -
+Etapa: iniciar inclusão
+Erro: RuntimeError("Timeout esperando 'Atualiza Operações da Folha de Operação' abrir (abrir tela de operações)")
+[10:46:55] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:50:18] Iniciando automação
+[10:50:18] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[10:50:18] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:50:18] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:50:18] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:50:18] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:50:19] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:50:19] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:50:19] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:50:19] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:50:19] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:50:19] Itens a processar: 2586 (já concluídos antes: 243)
+[10:50:19] Próximos itens: 1.112.1.11.0288, 1.195.1.01.0075, 1.123.1.02.9711, 1.187.1.05.1008, 1.187.1.01.0099
+[10:50:19] Começando em 10s. Mouse no canto superior esquerdo = ABORTAR.
+[10:50:29] 
+Item: 1.112.1.11.0288
+Subcentro: -
+Etapa: início
+Erro: KeyError('rev_fo')
+[10:50:29] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[10:55:04] Iniciando automação
+[10:55:04] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[10:55:04] PULADO (erro em execução anterior): 1.123.1.01.0047
+[10:55:04] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[10:55:04] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[10:55:04] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[10:55:04] Itens a processar: 2586 (já concluídos antes: 243)
+[10:55:04] Próximos itens: 1.112.1.11.0288, 1.195.1.01.0075, 1.123.1.02.9711, 1.187.1.05.1008, 1.187.1.01.0099
+[10:55:04] Começando em 5s. Mouse no canto superior esquerdo = ABORTAR.
+[10:55:09] Processando item: 1.112.1.11.0288 (REV.FO 10)
+[10:55:09] Subcentros válidos: CDPL
+[10:55:21] Iniciando exclusão: 1 subcentros + extras ['KANBAN', 'CCD'] = 3
+[10:55:21] Exclusão 1/3
+[10:55:27] Exclusão 2/3
+[10:55:32] Exclusão 3/3
+[10:55:40] Iniciando inclusão
+[10:55:40] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[10:56:13] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[10:56:50] Item finalizado
+
+[10:56:50] Processando item: 1.195.1.01.0075 (REV.FO 10)
+[10:56:50] Subcentros válidos: CDTE01
+[10:57:02] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:57:02] Exclusão 1/2
+[10:57:07] Exclusão 2/2
+[10:57:15] Iniciando inclusão
+[10:57:15] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,05, operadores 2)
+[10:57:49] Incluindo CCD (op 0.100, sub CCD, tempo 0,10, operadores 2)
+[10:58:25] Item finalizado
+
+[10:58:25] Processando item: 1.123.1.02.9711 (REV.FO 10)
+[10:58:25] Subcentros válidos: CDTE01
+[10:58:37] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[10:58:37] Exclusão 1/2
+[10:58:43] Exclusão 2/2
+[10:58:50] Iniciando inclusão
+[10:58:50] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,05, operadores 2)
+[10:59:24] Incluindo CCD (op 0.100, sub CCD, tempo 0,10, operadores 2)
+[11:00:00] Item finalizado
+
+[11:00:00] Processando item: 1.187.1.05.1008 (REV.FO 10)
+[11:00:00] Subcentros válidos: CDSE
+[11:00:12] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:00:12] Exclusão 1/2
+[11:00:18] Exclusão 2/2
+[11:00:25] Iniciando inclusão
+[11:00:25] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,12, operadores 1)
+[11:00:59] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 1)
+[11:01:35] Item finalizado
+
+[11:01:35] Processando item: 1.187.1.01.0099 (REV.FO None)
+[11:01:35] Subcentros válidos: CDPL
+[11:01:43] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.0099)
+[11:01:46] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:01:46] Exclusão 1/2
+[11:01:52] Exclusão 2/2
+[11:01:59] Iniciando inclusão
+[11:01:59] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[11:02:33] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[11:03:09] Item finalizado
+
+[11:03:09] Processando item: 1.187.1.01.0032 (REV.FO 10)
+[11:03:09] Subcentros válidos: CDPL01, CDVD02
+[11:03:21] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:03:21] Exclusão 1/3
+[11:03:27] Exclusão 2/3
+[11:03:32] Exclusão 3/3
+[11:03:40] Iniciando inclusão
+[11:03:40] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[11:04:13] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[11:04:47] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[11:05:23] Item finalizado
+
+[11:05:23] Processando item: 1.195.1.02.0012 (REV.FO 10)
+[11:05:23] Subcentros válidos: CDTE01, CDVD02
+[11:05:35] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:05:35] Exclusão 1/3
+[11:05:41] Exclusão 2/3
+[11:05:46] Exclusão 3/3
+[11:05:54] Iniciando inclusão
+[11:05:54] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,08, operadores 2)
+[11:06:28] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[11:07:01] Incluindo CCD (op 0.100, sub CCD, tempo 0,20, operadores 3)
+[11:07:38] Item finalizado
+
+[11:07:38] Processando item: 1.187.1.01.1018 (REV.FO None)
+[11:07:38] Subcentros válidos: CDSE
+[11:07:45] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.1018)
+[11:07:49] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:07:49] Exclusão 1/2
+[11:07:54] Exclusão 2/2
+[11:08:02] Iniciando inclusão
+[11:08:02] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,09, operadores 1)
+[11:08:35] Incluindo CCD (op 0.100, sub CCD, tempo 0,09, operadores 1)
+[11:09:12] Item finalizado
+
+[11:09:12] Processando item: 1.187.1.01.1691 (REV.FO None)
+[11:09:12] Subcentros válidos: CDSE
+[11:09:19] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.1691)
+[11:09:22] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:09:22] Exclusão 1/2
+[11:09:28] Exclusão 2/2
+[11:09:36] Iniciando inclusão
+[11:09:36] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,03, operadores 1)
+[11:10:09] Incluindo CCD (op 0.100, sub CCD, tempo 0,03, operadores 1)
+[11:10:46] Item finalizado
+
+[11:10:46] Processando item: 1.078.0.00.8173 (REV.FO None)
+[11:10:46] Subcentros válidos: CDPL, CDFR
+[11:10:53] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.8173)
+[11:10:56] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:10:56] Exclusão 1/3
+[11:11:02] Exclusão 2/3
+[11:11:07] Exclusão 3/3
+[11:11:15] Iniciando inclusão
+[11:11:15] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[11:11:48] Incluindo CDFR (op 0.020, sub CDFR, tempo 0,12, operadores 1)
+[11:12:22] Incluindo CCD (op 0.100, sub CCD, tempo 0,26, operadores 3)
+[11:12:58] Item finalizado
+
+[11:12:58] Processando item: 1.187.1.02.1011 (REV.FO 10)
+[11:12:58] Subcentros válidos: CDPL
+[11:13:10] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:13:10] Exclusão 1/2
+[11:13:16] Exclusão 2/2
+[11:13:23] Iniciando inclusão
+[11:13:23] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[11:13:57] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[11:14:33] Item finalizado
+
+[11:14:33] Processando item: 1.123.1.02.3027 (REV.FO 10)
+[11:14:33] Subcentros válidos: CDTE01, CDVD02
+[11:14:45] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:14:45] Exclusão 1/3
+[11:14:51] Exclusão 2/3
+[11:14:56] Exclusão 3/3
+[11:15:04] Iniciando inclusão
+[11:15:04] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,04, operadores 2)
+[11:15:38] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[11:16:11] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 3)
+[11:16:48] Item finalizado
+
+[11:16:48] Processando item: 1.073.0.00.2237 (REV.FO None)
+[11:16:48] Subcentros válidos: CDPL, CDFR
+[11:16:55] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.073.0.00.2237)
+[11:16:58] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:16:58] Exclusão 1/3
+[11:17:04] Exclusão 2/3
+[11:17:10] Exclusão 3/3
+[11:17:17] Iniciando inclusão
+[11:17:17] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[11:17:51] Incluindo CDFR (op 0.020, sub CDFR, tempo 0,05, operadores 1)
+[11:18:24] Incluindo CCD (op 0.100, sub CCD, tempo 0,19, operadores 3)
+[11:19:00] Item finalizado
+
+[11:19:00] Processando item: 1.187.1.01.0021 (REV.FO 10)
+[11:19:00] Subcentros válidos: CDPL01, CDVD02
+[11:19:12] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:19:12] Exclusão 1/3
+[11:19:18] Exclusão 2/3
+[11:19:23] Exclusão 3/3
+[11:19:31] Iniciando inclusão
+[11:19:31] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[11:20:05] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[11:20:38] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[11:21:15] Item finalizado
+
+[11:21:15] Processando item: 1.187.1.01.1125 (REV.FO 10)
+[11:21:15] Subcentros válidos: CDPL01, CDVD02
+[11:21:27] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:21:27] Exclusão 1/3
+[11:21:32] Exclusão 2/3
+[11:21:38] Exclusão 3/3
+[11:21:45] Iniciando inclusão
+[11:21:45] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[11:22:19] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[11:22:53] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[11:23:29] Item finalizado
+
+[11:23:29] Processando item: 1.187.1.02.1076 (REV.FO None)
+[11:23:29] Subcentros válidos: CDPL, CDFR
+[11:23:36] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.1076)
+[11:23:40] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:23:40] Exclusão 1/3
+[11:23:45] Exclusão 2/3
+[11:23:51] Exclusão 3/3
+[11:23:58] Iniciando inclusão
+[11:23:58] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[11:24:32] Incluindo CDFR (op 0.020, sub CDFR, tempo 0,10, operadores 1)
+[11:25:05] Incluindo CCD (op 0.100, sub CCD, tempo 0,24, operadores 3)
+[11:25:42] Item finalizado
+
+[11:25:42] Processando item: 1.187.1.01.1014 (REV.FO 10)
+[11:25:42] Subcentros válidos: CDPL
+[11:25:54] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:25:54] Exclusão 1/2
+[11:25:59] Exclusão 2/2
+[11:26:07] Iniciando inclusão
+[11:26:07] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,09, operadores 2)
+[11:26:40] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 2)
+[11:27:17] Item finalizado
+
+[11:27:17] Processando item: 1.187.1.04.0005 (REV.FO None)
+[11:27:17] Subcentros válidos: CDPL
+[11:27:24] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.04.0005)
+[11:27:28] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[11:27:28] Exclusão 1/2
+[11:27:33] Exclusão 2/2
+[11:27:41] Iniciando inclusão
+[11:27:41] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,08, operadores 2)
+[11:28:14] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 2)
+[11:28:51] Item finalizado
+
+[11:28:51] Processando item: 1.185.1.02.0018 (REV.FO None)
+[11:28:51] Subcentros válidos: CDPL, CDVD02
+[11:28:58] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.185.1.02.0018)
+[11:29:01] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[11:29:01] Exclusão 1/3
+[11:29:07] Exclusão 2/3
+[11:29:13] Exclusão 3/3
+[11:29:40] 
+Item: 1.185.1.02.0018
+Subcentro: -
+Etapa: iniciar inclusão
+Erro: RuntimeError("Timeout esperando 'Atualiza Operações da Folha de Operação' abrir (abrir tela de operações)")
+[11:29:40] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[12:33:17] Iniciando automação
+[12:33:17] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[12:33:17] PULADO (erro em execução anterior): 1.123.1.01.0047
+[12:33:17] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[12:33:17] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[12:33:17] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[12:33:17] Itens a processar: 2568 (já concluídos antes: 261)
+[12:33:17] Próximos itens: 1.185.1.02.0018, 1.187.1.01.0092, 1.187.1.01.1028, 1.187.1.01.1197, 1.123.1.02.9713
+[12:33:17] Começando em 5s. Mouse no canto superior esquerdo = ABORTAR.
+[12:33:22] Processando item: 1.185.1.02.0018 (REV.FO None)
+[12:33:22] Subcentros válidos: CDPL, CDVD02
+[12:33:29] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.185.1.02.0018)
+[12:33:33] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[12:33:33] Exclusão 1/3
+[12:33:38] Exclusão 2/3
+[12:33:44] Interrompido pelo usuário. Verifique o ERP: o item pode estar incompleto.
+[14:28:48] Iniciando automação
+[14:28:48] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[14:28:48] PULADO (erro em execução anterior): 1.123.1.01.0047
+[14:28:48] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[14:28:48] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[14:28:48] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[14:28:48] Itens a processar: 2568 (já concluídos antes: 261)
+[14:28:48] Próximos itens: 1.185.1.02.0018, 1.187.1.01.0092, 1.187.1.01.1028, 1.187.1.01.1197, 1.123.1.02.9713
+[14:28:48] Começando em 5s. Mouse no canto superior esquerdo = ABORTAR.
+[14:28:53] Processando item: 1.185.1.02.0018 (REV.FO None)
+[14:28:53] Subcentros válidos: CDPL, CDVD02
+[14:29:01] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.185.1.02.0018)
+[14:29:04] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[14:29:04] Exclusão 1/3
+[14:29:10] Exclusão 2/3
+[14:29:15] Exclusão 3/3
+[14:29:23] Iniciando inclusão
+[14:29:23] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[14:29:56] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[14:30:30] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[14:31:06] Item finalizado
+
+[14:31:06] Processando item: 1.187.1.01.0092 (REV.FO None)
+[14:31:06] Subcentros válidos: CDPL
+[14:31:14] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.0092)
+[14:31:17] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:31:17] Exclusão 1/2
+[14:31:23] Exclusão 2/2
+[14:31:30] Iniciando inclusão
+[14:31:30] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[14:32:04] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[14:32:40] Item finalizado
+
+[14:32:40] Processando item: 1.187.1.01.1028 (REV.FO 10)
+[14:32:40] Subcentros válidos: CDPL01
+[14:32:52] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:32:52] Exclusão 1/2
+[14:32:58] Exclusão 2/2
+[14:33:05] Iniciando inclusão
+[14:33:05] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,13, operadores 2)
+[14:33:39] Incluindo CCD (op 0.100, sub CCD, tempo 0,26, operadores 2)
+[14:34:16] Item finalizado
+
+[14:34:16] Processando item: 1.187.1.01.1197 (REV.FO None)
+[14:34:16] Subcentros válidos: CDSE
+[14:34:23] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.1197)
+[14:34:26] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:34:26] Exclusão 1/2
+[14:34:32] Exclusão 2/2
+[14:34:39] Iniciando inclusão
+[14:34:40] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,03, operadores 1)
+[14:35:13] Incluindo CCD (op 0.100, sub CCD, tempo 0,03, operadores 1)
+[14:35:49] Item finalizado
+
+[14:35:49] Processando item: 1.123.1.02.9713 (REV.FO 10)
+[14:35:49] Subcentros válidos: CDSE
+[14:36:01] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:36:01] Exclusão 1/2
+[14:36:07] Exclusão 2/2
+[14:36:15] Iniciando inclusão
+[14:36:15] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,05, operadores 1)
+[14:36:48] Incluindo CCD (op 0.100, sub CCD, tempo 0,05, operadores 1)
+[14:37:25] Item finalizado
+
+[14:37:25] Processando item: 1.187.1.01.0096 (REV.FO None)
+[14:37:25] Subcentros válidos: CDSE
+[14:37:32] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.0096)
+[14:37:35] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:37:35] Exclusão 1/2
+[14:37:41] Exclusão 2/2
+[14:37:49] Iniciando inclusão
+[14:37:49] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,04, operadores 1)
+[14:38:22] Incluindo CCD (op 0.100, sub CCD, tempo 0,04, operadores 1)
+[14:38:59] Item finalizado
+
+[14:38:59] Processando item: 1.187.1.01.0088 (REV.FO None)
+[14:38:59] Subcentros válidos: CDPL
+[14:39:06] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.0088)
+[14:39:09] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:39:09] Exclusão 1/2
+[14:39:15] Exclusão 2/2
+[14:39:23] Iniciando inclusão
+[14:39:23] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[14:39:56] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[14:40:33] Item finalizado
+
+[14:40:33] Processando item: 1.187.1.03.1011 (REV.FO None)
+[14:40:33] Subcentros válidos: CDPL
+[14:40:40] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.03.1011)
+[14:40:43] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:40:43] Exclusão 1/2
+[14:40:49] Exclusão 2/2
+[14:40:56] Iniciando inclusão
+[14:40:56] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,09, operadores 2)
+[14:41:30] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 2)
+[14:42:06] Item finalizado
+
+[14:42:06] Processando item: 1.078.0.00.9042 (REV.FO None)
+[14:42:06] Subcentros válidos: CDPL, CDVD01
+[14:42:14] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9042)
+[14:42:17] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[14:42:17] Exclusão 1/3
+[14:42:23] Exclusão 2/3
+[14:42:28] Exclusão 3/3
+[14:42:36] Iniciando inclusão
+[14:42:36] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[14:43:09] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[14:43:43] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 4)
+[14:44:20] Item finalizado
+
+[14:44:20] Processando item: 1.195.1.05.1013 (REV.FO 10)
+[14:44:20] Subcentros válidos: CDPL01
+[14:44:32] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:44:32] Exclusão 1/2
+[14:44:37] Exclusão 2/2
+[14:44:45] Iniciando inclusão
+[14:44:45] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,08, operadores 2)
+[14:45:18] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 2)
+[14:45:55] Item finalizado
+
+[14:45:55] Processando item: 1.187.1.05.0005 (REV.FO 10)
+[14:45:55] Subcentros válidos: CDPL01
+[14:46:07] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:46:07] Exclusão 1/2
+[14:46:12] Exclusão 2/2
+[14:46:20] Iniciando inclusão
+[14:46:20] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[14:46:54] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[14:47:30] Item finalizado
+
+[14:47:30] Processando item: 1.187.1.01.1121 (REV.FO 10)
+[14:47:30] Subcentros válidos: CDPL01, CDVD02
+[14:47:42] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[14:47:42] Exclusão 1/3
+[14:47:48] Exclusão 2/3
+[14:47:53] Exclusão 3/3
+[14:48:01] Iniciando inclusão
+[14:48:01] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[14:48:34] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[14:49:08] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[14:49:45] Item finalizado
+
+[14:49:45] Processando item: 1.184.1.14.1020 (REV.FO None)
+[14:49:45] Subcentros válidos: CDPL
+[14:49:52] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.184.1.14.1020)
+[14:49:55] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:49:55] Exclusão 1/2
+[14:50:01] Exclusão 2/2
+[14:50:08] Iniciando inclusão
+[14:50:08] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[14:50:42] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[14:51:18] Item finalizado
+
+[14:51:18] Processando item: 1.073.0.00.2038 (REV.FO None)
+[14:51:18] Subcentros válidos: CDPL, CDFR
+[14:51:26] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.073.0.00.2038)
+[14:51:29] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[14:51:29] Exclusão 1/3
+[14:51:35] Exclusão 2/3
+[14:51:40] Exclusão 3/3
+[14:51:48] Iniciando inclusão
+[14:51:48] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[14:52:21] Incluindo CDFR (op 0.020, sub CDFR, tempo 0,02, operadores 1)
+[14:52:55] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[14:53:31] Item finalizado
+
+[14:53:31] Processando item: 1.078.0.00.9019 (REV.FO None)
+[14:53:31] Subcentros válidos: CDPL
+[14:53:39] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9019)
+[14:53:42] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[14:53:42] Exclusão 1/2
+[14:53:48] Exclusão 2/2
+[14:53:55] Iniciando inclusão
+[14:53:55] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[14:54:29] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[14:55:05] Item finalizado
+
+[14:55:05] Processando item: 1.187.1.01.1122 (REV.FO 10)
+[14:55:05] Subcentros válidos: CDPL01, CDVD02
+[14:55:17] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[14:55:17] Exclusão 1/3
+[14:55:23] Exclusão 2/3
+[14:55:28] Exclusão 3/3
+[14:55:36] Iniciando inclusão
+[14:55:36] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[14:56:09] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[14:56:43] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[14:57:20] Item finalizado
+
+[14:57:20] Processando item: 1.078.0.00.9053 (REV.FO None)
+[14:57:20] Subcentros válidos: CDPL01, CDVD02
+[14:57:27] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9053)
+[14:57:31] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[14:57:31] Exclusão 1/3
+[14:57:36] Exclusão 2/3
+[14:57:42] Exclusão 3/3
+[14:57:49] Iniciando inclusão
+[14:57:49] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[14:58:23] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[14:58:57] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[14:59:29] Interrompido pelo usuário. Verifique o ERP: o item pode estar incompleto.
+[15:00:45] Iniciando automação
+[15:00:45] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[15:00:45] PULADO (erro em execução anterior): 1.123.1.01.0047
+[15:00:45] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[15:00:45] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[15:00:45] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[15:00:45] Itens a processar: 2552 (já concluídos antes: 277)
+[15:00:45] Próximos itens: 1.078.0.00.9053, 1.078.0.00.9018, 1.187.1.01.1808, 1.187.1.05.0008, 1.078.0.00.9016
+[15:00:45] Começando em 5s. Mouse no canto superior esquerdo = ABORTAR.
+[15:00:50] Processando item: 1.078.0.00.9053 (REV.FO None)
+[15:00:50] Subcentros válidos: CDPL01, CDVD02
+[15:00:57] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9053)
+[15:01:01] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:01:01] Exclusão 1/3
+[15:01:06] Exclusão 2/3
+[15:01:12] Exclusão 3/3
+[15:01:20] Iniciando inclusão
+[15:01:20] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:01:53] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[15:02:27] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[15:03:03] Item finalizado
+
+[15:03:03] Processando item: 1.078.0.00.9018 (REV.FO None)
+[15:03:03] Subcentros válidos: CDPL
+[15:03:11] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9018)
+[15:03:14] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:03:14] Exclusão 1/2
+[15:03:20] Exclusão 2/2
+[15:03:27] Iniciando inclusão
+[15:03:27] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[15:04:01] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[15:04:37] Item finalizado
+
+[15:04:37] Processando item: 1.187.1.01.1808 (REV.FO None)
+[15:04:37] Subcentros válidos: CDPL01
+[15:04:44] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.1808)
+[15:04:48] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:04:48] Exclusão 1/2
+[15:04:54] Exclusão 2/2
+[15:05:01] Iniciando inclusão
+[15:05:01] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:05:35] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[15:06:11] Item finalizado
+
+[15:06:11] Processando item: 1.187.1.05.0008 (REV.FO 10)
+[15:06:11] Subcentros válidos: CDPL01, CDVD02
+[15:06:23] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:06:23] Exclusão 1/3
+[15:06:29] Exclusão 2/3
+[15:06:34] Exclusão 3/3
+[15:06:42] Iniciando inclusão
+[15:06:42] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:07:15] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,10, operadores 1)
+[15:07:49] Incluindo CCD (op 0.100, sub CCD, tempo 0,22, operadores 3)
+[15:08:25] Item finalizado
+
+[15:08:25] Processando item: 1.078.0.00.9016 (REV.FO None)
+[15:08:25] Subcentros válidos: CDPL
+[15:08:33] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9016)
+[15:08:36] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:08:36] Exclusão 1/2
+[15:08:42] Exclusão 2/2
+[15:08:49] Iniciando inclusão
+[15:08:49] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[15:09:23] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[15:09:59] Item finalizado
+
+[15:09:59] Processando item: 1.187.1.02.0074 (REV.FO 10)
+[15:09:59] Subcentros válidos: CDPL01
+[15:10:11] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:10:11] Exclusão 1/2
+[15:10:17] Exclusão 2/2
+[15:10:24] Iniciando inclusão
+[15:10:24] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,09, operadores 2)
+[15:10:58] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 2)
+[15:11:35] Item finalizado
+
+[15:11:35] Processando item: 1.187.1.05.0006 (REV.FO 10)
+[15:11:35] Subcentros válidos: CDPL01
+[15:11:35] 
+Item: 1.187.1.05.0006
+Subcentro: -
+Etapa: selecionar produto
+Erro: FailSafeException('PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.')
+[15:11:35] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.
+[15:15:26] Iniciando automação
+[15:15:26] Planilha carregada do cache. Itens válidos: 2850 (apague cache_planilha.json para reler)
+[15:15:26] PULADO (erro em execução anterior): 1.123.1.01.0047
+[15:15:26] PULADO (sem subcentro válido): 1.123.1.01.3097 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.123.1.01.3022 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.187.1.02.1160 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.205.1.01.1542 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.209.1.05.0016 | extras: ['CCD']
+[15:15:26] PULADO (sem subcentro válido): 1.078.0.00.4069 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.123.1.02.3033.452 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.170.1.02.0445 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.132.1.01.3016 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.036.1.00.1120 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.123.1.11.3294 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.04.1.01.0197 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.187.1.01.5064 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.142.1.14.1434 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.205.1.01.1583 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.187.1.01.1805.549 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.140.1.00.1139.796 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.123.1.01.3023 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.123.1.01.3035 | extras: []
+[15:15:26] PULADO (sem subcentro válido): 1.188.1.14.1053 | extras: []
+[15:15:26] Itens a processar: 2546 (já concluídos antes: 283)
+[15:15:26] Próximos itens: 1.187.1.05.0006, 1.187.1.01.0022, 1.184.1.14.1019, 1.158.1.11.0112, 1.078.0.00.9045
+[15:15:26] Começando em 5s. Mouse no canto superior esquerdo = ABORTAR.
+[15:15:31] Processando item: 1.187.1.05.0006 (REV.FO 10)
+[15:15:31] Subcentros válidos: CDPL01
+[15:15:43] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:15:43] Exclusão 1/2
+[15:15:47] Exclusão 2/2
+[15:15:54] Iniciando inclusão
+[15:15:54] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[15:16:28] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[15:17:04] Item finalizado
+
+[15:17:04] Processando item: 1.187.1.01.0022 (REV.FO 10)
+[15:17:04] Subcentros válidos: CDPL01, CDVD02
+[15:17:16] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:17:16] Exclusão 1/3
+[15:17:22] Exclusão 2/3
+[15:17:27] Exclusão 3/3
+[15:17:35] Iniciando inclusão
+[15:17:35] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:18:09] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[15:18:42] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[15:19:19] Item finalizado
+
+[15:19:19] Processando item: 1.184.1.14.1019 (REV.FO None)
+[15:19:19] Subcentros válidos: CDPL, CDVD01
+[15:19:26] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.184.1.14.1019)
+[15:19:29] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:19:29] Exclusão 1/3
+[15:19:35] Exclusão 2/3
+[15:19:41] Exclusão 3/3
+[15:19:48] Iniciando inclusão
+[15:19:48] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[15:20:22] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,07, operadores 2)
+[15:20:55] Incluindo CCD (op 0.100, sub CCD, tempo 0,26, operadores 4)
+[15:21:32] Item finalizado
+
+[15:21:32] Processando item: 1.158.1.11.0112 (REV.FO None)
+[15:21:32] Subcentros válidos: CDPL
+[15:21:39] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.158.1.11.0112)
+[15:21:42] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:21:42] Exclusão 1/2
+[15:21:48] Exclusão 2/2
+[15:21:56] Iniciando inclusão
+[15:21:56] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[15:22:29] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[15:23:05] Item finalizado
+
+[15:23:05] Processando item: 1.078.0.00.9045 (REV.FO None)
+[15:23:05] Subcentros válidos: CDPL01, CDVD02
+[15:23:13] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9045)
+[15:23:16] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:23:16] Exclusão 1/3
+[15:23:22] Exclusão 2/3
+[15:23:27] Exclusão 3/3
+[15:23:35] Iniciando inclusão
+[15:23:35] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:24:09] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[15:24:42] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[15:25:19] Item finalizado
+
+[15:25:19] Processando item: 1.078.0.00.9034 (REV.FO None)
+[15:25:19] Subcentros válidos: CDPL, CDFR
+[15:25:26] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9034)
+[15:25:30] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:25:30] Exclusão 1/3
+[15:25:35] Exclusão 2/3
+[15:25:41] Exclusão 3/3
+[15:25:48] Iniciando inclusão
+[15:25:48] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[15:26:22] Incluindo CDFR (op 0.020, sub CDFR, tempo 0,14, operadores 1)
+[15:26:55] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 3)
+[15:27:31] Item finalizado
+
+[15:27:31] Processando item: 1.187.1.01.1583 (REV.FO 10)
+[15:27:31] Subcentros válidos: CDPL01
+[15:27:43] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:27:43] Exclusão 1/2
+[15:27:49] Exclusão 2/2
+[15:27:57] Iniciando inclusão
+[15:27:57] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:28:30] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[15:29:07] Item finalizado
+
+[15:29:07] Processando item: 1.187.1.01.1124 (REV.FO 10)
+[15:29:07] Subcentros válidos: CDPL01, CDVD02
+[15:29:19] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:29:19] Exclusão 1/3
+[15:29:24] Exclusão 2/3
+[15:29:30] Exclusão 3/3
+[15:29:37] Iniciando inclusão
+[15:29:37] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:30:11] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[15:30:45] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[15:31:21] Item finalizado
+
+[15:31:21] Processando item: 1.185.1.02.0017 (REV.FO None)
+[15:31:21] Subcentros válidos: CDPL01, CDVD01
+[15:31:28] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.185.1.02.0017)
+[15:31:32] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:31:32] Exclusão 1/3
+[15:31:37] Exclusão 2/3
+[15:31:43] Exclusão 3/3
+[15:31:51] Iniciando inclusão
+[15:31:51] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,11, operadores 2)
+[15:32:24] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,08, operadores 2)
+[15:32:58] Incluindo CCD (op 0.100, sub CCD, tempo 0,38, operadores 4)
+[15:33:34] Item finalizado
+
+[15:33:34] Processando item: 1.187.1.01.0033 (REV.FO 10)
+[15:33:34] Subcentros válidos: CDPL01, CDVD02
+[15:33:46] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:33:46] Exclusão 1/3
+[15:33:52] Exclusão 2/3
+[15:33:57] Exclusão 3/3
+[15:34:05] Iniciando inclusão
+[15:34:05] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:34:39] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[15:35:12] Incluindo CCD (op 0.100, sub CCD, tempo 0,17, operadores 3)
+[15:35:49] Item finalizado
+
+[15:35:49] Processando item: 1.188.1.02.1152 (REV.FO None)
+[15:35:49] Subcentros válidos: CDPL01, CDVD01
+[15:35:56] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.188.1.02.1152)
+[15:35:59] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:35:59] Exclusão 1/3
+[15:36:05] Exclusão 2/3
+[15:36:11] Exclusão 3/3
+[15:36:18] Iniciando inclusão
+[15:36:18] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:36:52] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,07, operadores 2)
+[15:37:25] Incluindo CCD (op 0.100, sub CCD, tempo 0,26, operadores 4)
+[15:38:02] Item finalizado
+
+[15:38:02] Processando item: 1.158.1.01.3506 (REV.FO None)
+[15:38:02] Subcentros válidos: CDSE, CDPL, CDCA01
+[15:38:09] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.158.1.01.3506)
+[15:38:13] Iniciando exclusão: 3 subcentros + extras ['CCD'] = 4
+[15:38:13] Exclusão 1/4
+[15:38:18] Exclusão 2/4
+[15:38:24] Exclusão 3/4
+[15:38:29] Exclusão 4/4
+[15:38:37] Iniciando inclusão
+[15:38:37] Incluindo CDSE (op 0.010, sub CDSE, tempo 0,11, operadores 1)
+[15:39:10] Incluindo CDPL (op 0.020, sub CDPL, tempo 0,10, operadores 2)
+[15:39:44] Incluindo CDCA01 (op 0.030, sub CDCA01, tempo 0,10, operadores 2)
+[15:40:17] Incluindo CCD (op 0.100, sub CCD, tempo 0,51, operadores 5)
+[15:40:54] Item finalizado
+
+[15:40:54] Processando item: 1.078.0.00.9026 (REV.FO None)
+[15:40:54] Subcentros válidos: CDPL
+[15:41:01] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9026)
+[15:41:05] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:41:05] Exclusão 1/2
+[15:41:10] Exclusão 2/2
+[15:41:18] Iniciando inclusão
+[15:41:18] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[15:41:51] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[15:42:28] Item finalizado
+
+[15:42:28] Processando item: 1.187.1.02.1019 (REV.FO None)
+[15:42:28] Subcentros válidos: CDPL01, CDVD02
+[15:42:35] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.1019)
+[15:42:38] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:42:38] Exclusão 1/3
+[15:42:44] Exclusão 2/3
+[15:42:49] Exclusão 3/3
+[15:42:57] Iniciando inclusão
+[15:42:57] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:43:31] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[15:44:04] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[15:44:41] Item finalizado
+
+[15:44:41] Processando item: 1.158.1.11.0108 (REV.FO None)
+[15:44:41] Subcentros válidos: CDPL
+[15:44:48] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.158.1.11.0108)
+[15:44:51] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:44:51] Exclusão 1/2
+[15:44:57] Exclusão 2/2
+[15:45:05] Iniciando inclusão
+[15:45:05] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[15:45:38] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[15:46:14] Item finalizado
+
+[15:46:14] Processando item: 1.078.0.00.9005 (REV.FO None)
+[15:46:14] Subcentros válidos: CDPL
+[15:46:22] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9005)
+[15:46:25] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:46:25] Exclusão 1/2
+[15:46:31] Exclusão 2/2
+[15:46:38] Iniciando inclusão
+[15:46:38] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[15:47:12] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[15:47:48] Item finalizado
+
+[15:47:48] Processando item: 1.96.1.05.0003 (REV.FO 10)
+[15:47:48] Subcentros válidos: CDPL01
+[15:48:00] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:48:00] Exclusão 1/2
+[15:48:06] Exclusão 2/2
+[15:48:13] Iniciando inclusão
+[15:48:13] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,09, operadores 2)
+[15:48:47] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 2)
+[15:49:23] Item finalizado
+
+[15:49:23] Processando item: 1.078.0.00.9009 (REV.FO None)
+[15:49:23] Subcentros válidos: CDPL
+[15:49:31] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9009)
+[15:49:34] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:49:34] Exclusão 1/2
+[15:49:40] Exclusão 2/2
+[15:49:47] Iniciando inclusão
+[15:49:47] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[15:50:21] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[15:50:57] Item finalizado
+
+[15:50:57] Processando item: 1.189.1.02.1642 (REV.FO None)
+[15:50:57] Subcentros válidos: CDTE01, CDVD02
+[15:51:04] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.189.1.02.1642)
+[15:51:08] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:51:08] Exclusão 1/3
+[15:51:14] Exclusão 2/3
+[15:51:19] Exclusão 3/3
+[15:51:27] Iniciando inclusão
+[15:51:27] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,05, operadores 2)
+[15:52:00] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[15:52:34] Incluindo CCD (op 0.100, sub CCD, tempo 0,15, operadores 3)
+[15:53:10] Item finalizado
+
+[15:53:10] Processando item: 1.187.1.01.1546 (REV.FO None)
+[15:53:10] Subcentros válidos: CDPL01, CDVD02
+[15:53:18] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.01.1546)
+[15:53:21] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:53:21] Exclusão 1/3
+[15:53:27] Exclusão 2/3
+[15:53:32] Exclusão 3/3
+[15:53:40] Iniciando inclusão
+[15:53:40] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[15:54:13] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[15:54:47] Incluindo CCD (op 0.100, sub CCD, tempo 0,18, operadores 3)
+[15:55:24] Item finalizado
+
+[15:55:24] Processando item: 1.078.0.00.9008 (REV.FO None)
+[15:55:24] Subcentros válidos: CDPL
+[15:55:31] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9008)
+[15:55:34] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:55:34] Exclusão 1/2
+[15:55:40] Exclusão 2/2
+[15:55:47] Iniciando inclusão
+[15:55:47] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[15:56:21] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[15:56:57] Item finalizado
+
+[15:56:57] Processando item: 1.078.0.00.9007 (REV.FO None)
+[15:56:57] Subcentros válidos: CDPL
+[15:57:05] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9007)
+[15:57:08] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[15:57:08] Exclusão 1/2
+[15:57:14] Exclusão 2/2
+[15:57:21] Iniciando inclusão
+[15:57:21] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[15:57:55] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[15:58:31] Item finalizado
+
+[15:58:31] Processando item: 1.078.0.00.9097 (REV.FO None)
+[15:58:31] Subcentros válidos: CDPL01, CDVD02
+[15:58:39] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9097)
+[15:58:42] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[15:58:42] Exclusão 1/3
+[15:58:48] Exclusão 2/3
+[15:58:53] Exclusão 3/3
+[15:59:01] Iniciando inclusão
+[15:59:01] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,06, operadores 2)
+[15:59:34] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[16:00:08] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[16:00:44] Item finalizado
+
+[16:00:44] Processando item: 1.187.1.02.1925 (REV.FO None)
+[16:00:44] Subcentros válidos: CDPL01, CDVD01
+[16:00:52] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.187.1.02.1925)
+[16:00:55] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[16:00:55] Exclusão 1/3
+[16:01:01] Exclusão 2/3
+[16:01:06] Exclusão 3/3
+[16:01:14] Iniciando inclusão
+[16:01:14] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[16:01:48] Incluindo CDVD01 (op 0.020, sub CDVD01, tempo 0,07, operadores 2)
+[16:02:21] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 4)
+[16:02:58] Item finalizado
+
+[16:02:58] Processando item: 1.078.0.00.9006 (REV.FO None)
+[16:02:58] Subcentros válidos: CDPL01, CDVD02
+[16:03:05] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9006)
+[16:03:08] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[16:03:08] Exclusão 1/3
+[16:03:14] Exclusão 2/3
+[16:03:19] Exclusão 3/3
+[16:03:27] Iniciando inclusão
+[16:03:27] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[16:04:01] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,06, operadores 1)
+[16:04:34] Incluindo CCD (op 0.100, sub CCD, tempo 0,20, operadores 3)
+[16:05:11] Item finalizado
+
+[16:05:11] Processando item: 1.078.0.00.9035 (REV.FO None)
+[16:05:11] Subcentros válidos: CDPL, CDFR
+[16:05:18] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9035)
+[16:05:22] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[16:05:22] Exclusão 1/3
+[16:05:27] Exclusão 2/3
+[16:05:33] Exclusão 3/3
+[16:05:40] Iniciando inclusão
+[16:05:40] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[16:06:14] Incluindo CDFR (op 0.020, sub CDFR, tempo 0,14, operadores 1)
+[16:06:47] Incluindo CCD (op 0.100, sub CCD, tempo 0,28, operadores 3)
+[16:07:24] Item finalizado
+
+[16:07:24] Processando item: 1.188.1.02.1013 (REV.FO 10)
+[16:07:24] Subcentros válidos: CDTE01, CDVD02
+[16:07:36] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[16:07:36] Exclusão 1/3
+[16:07:41] Exclusão 2/3
+[16:07:47] Exclusão 3/3
+[16:07:54] Iniciando inclusão
+[16:07:54] Incluindo CDTE01 (op 0.010, sub CDTE01, tempo 0,05, operadores 2)
+[16:08:28] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,05, operadores 1)
+[16:09:02] Incluindo CCD (op 0.100, sub CCD, tempo 0,15, operadores 3)
+[16:09:38] Item finalizado
+
+[16:09:38] Processando item: 1.078.0.00.9021 (REV.FO None)
+[16:09:38] Subcentros válidos: CDPL01, CDVD02
+[16:09:45] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.078.0.00.9021)
+[16:09:49] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[16:09:49] Exclusão 1/3
+[16:09:54] Exclusão 2/3
+[16:10:00] Exclusão 3/3
+[16:10:08] Iniciando inclusão
+[16:10:08] Incluindo CDPL01 (op 0.010, sub CDPL01, tempo 0,07, operadores 2)
+[16:10:41] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,06, operadores 1)
+[16:11:15] Incluindo CCD (op 0.100, sub CCD, tempo 0,20, operadores 3)
+[16:11:51] Item finalizado
+
+[16:11:51] Processando item: 1.073.0.00.2036 (REV.FO None)
+[16:11:51] Subcentros válidos: CDPL
+[16:11:59] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.073.0.00.2036)
+[16:12:02] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[16:12:02] Exclusão 1/2
+[16:12:08] Exclusão 2/2
+[16:12:15] Iniciando inclusão
+[16:12:15] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,07, operadores 2)
+[16:12:49] Incluindo CCD (op 0.100, sub CCD, tempo 0,14, operadores 2)
+[16:13:25] Item finalizado
+
+[16:13:25] Processando item: 1.158.1.11.0103 (REV.FO None)
+[16:13:25] Subcentros válidos: CDPL
+[16:13:32] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.158.1.11.0103)
+[16:13:36] Iniciando exclusão: 1 subcentros + extras ['CCD'] = 2
+[16:13:36] Exclusão 1/2
+[16:13:41] Exclusão 2/2
+[16:13:49] Iniciando inclusão
+[16:13:49] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[16:14:22] Incluindo CCD (op 0.100, sub CCD, tempo 0,12, operadores 2)
+[16:14:59] Item finalizado
+
+[16:14:59] Processando item: 1.029.0.11.0002 (REV.FO None)
+[16:14:59] Subcentros válidos: CDPL, CDVD02
+[16:15:06] REV.FO vazia na planilha: mantendo a que o ERP preencheu (1.029.0.11.0002)
+[16:15:10] Iniciando exclusão: 2 subcentros + extras ['CCD'] = 3
+[16:15:10] Exclusão 1/3
+[16:15:15] Exclusão 2/3
+[16:15:21] Exclusão 3/3
+[16:15:28] Iniciando inclusão
+[16:15:28] Incluindo CDPL (op 0.010, sub CDPL, tempo 0,06, operadores 2)
+[16:16:02] Incluindo CDVD02 (op 0.020, sub CDVD02, tempo 0,04, operadores 1)
+[16:16:36] Incluindo CCD (op 0.100, sub CCD, tempo 0,16, operadores 3)
+[16:17:12] Item finalizado
+
+[16:17:12] Processando item: 1.187.1.02.1121 (REV.FO None)
+[16:17:12] Subcentros válidos: CDPL01, CDVD01
+[16:17:15] 
+Item: 1.187.1.02.1121
+Subcentro: -
+Etapa: selecionar produto
+Erro: FailSafeException('PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.')
+[16:17:15] PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.

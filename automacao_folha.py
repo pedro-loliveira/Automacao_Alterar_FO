@@ -74,7 +74,7 @@ MULT_ESPERA = 2.0 if MODO_TESTE else 1.0
 
 # ----- Segurança -----
 pyautogui.FAILSAFE = True       # mouse no canto superior esquerdo aborta o script
-CONTAGEM_REGRESSIVA = 10        # segundos de espera antes de começar a clicar
+CONTAGEM_REGRESSIVA = 5       # segundos de espera antes de começar a clicar
 MAX_EXCLUSOES_SEGURANCA = 30    # nunca excluir mais que isso por item
 
 # ----- Velocidade: ações do PyAutoGUI -----
@@ -104,12 +104,18 @@ TIMEOUT_JANELA = 20
 # a tela principal continua aberta depois do Cancelar?
 PRINCIPAL_ABERTA_APOS_CANCELAR = True
 
-COLUNA_REV_FO = "1.AFOSC_REV_FO"    # cabeçalho da coluna com a REV.FO correta (máximo da consulta)
-TABS_ANTES_REV_FO = 2               # Produto -> TAB (REV) -> TAB (chega na REV.FO)
-TABS_APOS_REV_FO = 1                 # depois de digitar a REV.FO, 1 TAB para sair do campo
-ESPERA_VALIDACAO_REV = 2.0          # tempo p/ o ERP validar a REV.FO e mostrar erro, se houver
-TECLA_FECHAR_AVISO = "enter"        # tecla que fecha o aviso de erro (CONFIRMAR)
-REPROCESSAR_ERROS = False           # False: itens de itens_com_erro.txt são pulados na próxima execução
+# cabeçalho da coluna com a REV.FO correta (máximo da consulta)
+COLUNA_REV_FO = "1.AFOSC_REV_FO"
+# Produto -> TAB (REV) -> TAB (chega na REV.FO)
+TABS_ANTES_REV_FO = 2
+# depois de digitar a REV.FO, 1 TAB para sair do campo
+TABS_APOS_REV_FO = 1
+# tempo p/ o ERP validar a REV.FO e mostrar erro, se houver
+ESPERA_VALIDACAO_REV = 2.0
+# tecla que fecha o aviso de erro (CONFIRMAR)
+TECLA_FECHAR_AVISO = "enter"
+# False: itens de itens_com_erro.txt são pulados na próxima execução
+REPROCESSAR_ERROS = False
 ARQ_ERROS = "itens_com_erro.txt"
 TITULO_ERRO = "ERRO"
 
@@ -252,7 +258,8 @@ def ler_planilha():
             if cache.get("assinatura") == assinatura:
                 itens = [{"codigo": i["codigo"],
                           "subcentros": [tuple(s) for s in i["subcentros"]],
-                          "existentes_extras": i["existentes_extras"]}
+                          "existentes_extras": i["existentes_extras"],
+                          "rev_fo": i.get("rev_fo")}
                          for i in cache["itens"]]
                 log.info(f"Planilha carregada do cache. Itens válidos: {len(itens)} "
                          f"(apague {ARQ_CACHE} para reler)")
@@ -309,10 +316,12 @@ def ler_planilha():
         extras = [n for n in COLUNAS_MAPEAMENTO if tem_valor(celula(linha, n))]
         rev = celula(linha, COLUNA_REV_FO)
         try:
-            n_rev = int(float(str(rev).replace(",", "."))) if tem_valor(rev) else None
+            n_rev = int(float(str(rev).replace(",", "."))
+                        ) if tem_valor(rev) else None
         except ValueError:
             n_rev = None
-        rev_fo = str(n_rev) if n_rev is not None else None   # None = deixar o ERP preencher; "0" é digitado
+        # None = deixar o ERP preencher; "0" é digitado
+        rev_fo = str(n_rev) if n_rev is not None else None
         itens.append({"codigo": codigo, "subcentros": subs,
                       "existentes_extras": extras, "rev_fo": rev_fo})
 
@@ -454,12 +463,16 @@ def escrever_em(nome_campo, texto):
 # 10. ETAPAS DO PROCESSO
 # =============================================================================
 def selecionar_produto(item):
-    codigo, rev_fo = item["codigo"], item["rev_fo"]   # rev_fo None = deixar o ERP preencher
+    # rev_fo None = deixar o ERP preencher
+    codigo, rev_fo = item["codigo"], item.get("rev_fo")
 
     verificar_janela()
-    esperar_janela(TITULO_PRINCIPAL, True, descricao="(antes de selecionar produto)")
-    esperar_janela(TITULO_OPERACOES, False, descricao="(tela de operações já aberta antes do produto)")
-    duplo_clicar("produto")          # duplo clique seleciona o código antigo inteiro
+    esperar_janela(TITULO_PRINCIPAL, True,
+                   descricao="(antes de selecionar produto)")
+    esperar_janela(TITULO_OPERACOES, False,
+                   descricao="(tela de operações já aberta antes do produto)")
+    # duplo clique seleciona o código antigo inteiro
+    duplo_clicar("produto")
     pausa(ESPERA_APOS_CAMPO)
     pyautogui.write(codigo, interval=INTERVALO_DIGITACAO)
 
@@ -470,7 +483,8 @@ def selecionar_produto(item):
     if rev_fo is not None:
         pyautogui.write(rev_fo, interval=INTERVALO_DIGITACAO)   # inclui "0"
     else:
-        log.info(f"REV.FO vazia na planilha: mantendo a que o ERP preencheu ({codigo})")
+        log.info(
+            f"REV.FO vazia na planilha: mantendo a que o ERP preencheu ({codigo})")
 
     for _ in range(TABS_APOS_REV_FO):
         pyautogui.press("tab")
@@ -483,10 +497,12 @@ def selecionar_produto(item):
             pyautogui.press(TECLA_FECHAR_AVISO)
             pausa(ESPERA_APOS_CAMPO)
             if janela_aberta(TITULO_ERRO):
-                raise RuntimeError("Janela 'ERRO' não fechou com a tecla configurada")
+                raise RuntimeError(
+                    "Janela 'ERRO' não fechou com a tecla configurada")
             clicar("cancelar")
             pausa(ESPERA_POS_EXCLUIR)
-            raise ItemComErro(codigo, f"REV.FO {rev_fo if rev_fo is not None else '(ERP)'} recusada pelo ERP")
+            raise ItemComErro(
+                codigo, f"REV.FO {rev_fo if rev_fo is not None else '(ERP)'} recusada pelo ERP")
         time.sleep(0.2)
 
 
@@ -525,7 +541,8 @@ def excluir_todas_operacoes(item):
     if total > MAX_EXCLUSOES_SEGURANCA:
         raise RuntimeError(
             f"{total} exclusões excede o limite de segurança ({MAX_EXCLUSOES_SEGURANCA})")
-    log.info(f"Iniciando exclusão: {qtd_subs} subcentros + extras {extras or 'nenhum'} = {total}")
+    log.info(
+        f"Iniciando exclusão: {qtd_subs} subcentros + extras {extras or 'nenhum'} = {total}")
     for i in range(1, total + 1):
         log.info(f"Exclusão {i}/{total}")
         excluir_operacao()
@@ -594,8 +611,10 @@ def registrar_concluido(codigo):
     with open(ARQ_CHECKPOINT, "a", encoding="utf-8") as f:
         f.write(codigo + "\n")
 
+
 class ItemComErro(Exception):
     """Erro recuperável: o item não foi alterado e o script pode seguir para o próximo."""
+
     def __init__(self, item, tipo):
         self.item, self.tipo = item, tipo
         super().__init__(f"{item} - {tipo}")
@@ -614,20 +633,24 @@ def carregar_com_erro():
 # =============================================================================
 # 12. PROCESSAMENTO DE UM ITEM
 # =============================================================================
+
+
 def processar_item(item):
     codigo = item["codigo"]
     etapa, atual = "início", "-"
     try:
         ops = montar_operacoes_item(item)
-        log.info(f"Processando item: {codigo} (REV.FO {item['rev_fo']})")
+        log.info(f"Processando item: {codigo} (REV.FO {item.get('rev_fo')})")
         log.info("Subcentros válidos: " +
                  ", ".join(c for c, _ in item["subcentros"]))
 
         etapa = "selecionar produto"
-        selecionar_produto(item)          # recebe o item inteiro (precisa da REV.FO)
+        # recebe o item inteiro (precisa da REV.FO)
+        selecionar_produto(item)
 
         etapa = "exclusão"
-        excluir_todas_operacoes(item)     # recebe o item inteiro (conta KANBAN/CCD)
+        # recebe o item inteiro (conta KANBAN/CCD)
+        excluir_todas_operacoes(item)
 
         etapa = "iniciar inclusão"
         iniciar_inclusao()
@@ -700,22 +723,27 @@ def main():
             log.warning(f"PULADO (erro em execução anterior): {i['codigo']}")
             continue
         if not i["subcentros"]:
-            log.warning(f"PULADO (sem subcentro válido): {i['codigo']} | extras: {i['existentes_extras']}")
+            log.warning(
+                f"PULADO (sem subcentro válido): {i['codigo']} | extras: {i['existentes_extras']}")
             continue
         pendentes.append(i)
 
     if MODO_TESTE and LIMITE_ITENS:
         pendentes = pendentes[:LIMITE_ITENS]
-    log.info(f"Itens a processar: {len(pendentes)} (já concluídos antes: {len(concluidos)})")
-    log.info("Próximos itens: " + ", ".join(i["codigo"] for i in pendentes[:5]))
+    log.info(
+        f"Itens a processar: {len(pendentes)} (já concluídos antes: {len(concluidos)})")
+    log.info("Próximos itens: " +
+             ", ".join(i["codigo"] for i in pendentes[:5]))
 
-    log.info(f"Começando em {CONTAGEM_REGRESSIVA}s. Mouse no canto superior esquerdo = ABORTAR.")
+    log.info(
+        f"Começando em {CONTAGEM_REGRESSIVA}s. Mouse no canto superior esquerdo = ABORTAR.")
     time.sleep(CONTAGEM_REGRESSIVA)
 
     try:
         for item in pendentes:
             if MODO_TESTE:
-                input(f"\n[TESTE] Pronto para processar {item['codigo']}. ENTER para continuar (Ctrl+C cancela)...")
+                input(
+                    f"\n[TESTE] Pronto para processar {item['codigo']}. ENTER para continuar (Ctrl+C cancela)...")
             try:
                 processar_item(item)
             except ItemComErro as e:
@@ -723,13 +751,16 @@ def main():
                 log.warning(f"ERRO RECUPERÁVEL, item pulado: {e}\n")
         log.info("Automação concluída")
     except pyautogui.FailSafeException:
-        log.error("ABORTADO pelo fail-safe (mouse no canto). Verifique o ERP: o item pode estar incompleto.")
+        log.error(
+            "ABORTADO pelo fail-safe (mouse no canto). Verifique o ERP: o item pode estar incompleto.")
     except KeyboardInterrupt:
-        log.error("Interrompido pelo usuário. Verifique o ERP: o item pode estar incompleto.")
+        log.error(
+            "Interrompido pelo usuário. Verifique o ERP: o item pode estar incompleto.")
     except ErroAutomacao as e:
-        log.error(f"\nItem: {e.item}\nSubcentro: {e.subcentro}\nEtapa: {e.etapa}\nErro: {e.erro}")
-        log.error("PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.")
-        
+        log.error(
+            f"\nItem: {e.item}\nSubcentro: {e.subcentro}\nEtapa: {e.etapa}\nErro: {e.erro}")
+        log.error(
+            "PARADO com segurança. O item acima pode estar incompleto no ERP, confira manualmente.")
 
 
 if __name__ == "__main__":
