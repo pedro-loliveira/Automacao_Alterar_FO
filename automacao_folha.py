@@ -28,11 +28,27 @@ import pygetwindow as gw
 
 import json
 import warnings
+
+from PIL import Image, ImageChops, ImageStat
 warnings.filterwarnings("ignore", message="Data Validation extension")
 
 # =============================================================================
 # 2. CONFIGURAÇÃO GERAL  (edite aqui)
 # =============================================================================
+# False desliga toda a checagem por imagem
+CONFERENCIA_VISUAL = True
+REGIAO_BOTAO_INCLUIR = (424, 397, 76, 25)
+# cole a tupla impressa pelo teste: (x, y, largura, altura)
+REGIAO_CAMPO_OPERACAO = None
+LIMIAR_BOTAO = 6.0      # cinza x preto = 12,35 (ruído 0,00)
+# "igual à referência" = diferença <= 3 (ruído 0,00; menor distância entre estados 18,55)
+LIMIAR_CAMPO = 3.0
+# segundos esperando o estado esperado (sem multiplicador)
+TIMEOUT_ESTADO = 40
+ARQ_REF_CAMPO_AZUL = "ref_op_A_azul.png"        # Operação azul, janela com foco
+ARQ_REF_CAMPO_SEMFOCO = "ref_op_B_semfoco.png"  # Operação vazia, janela sem foco
+ARQ_REF_BOTAO_CINZA = "ref_botao_A_azul.png"    # Incluir cinza
+
 CAMINHO_PLANILHA = (
     r"C:\Users\p.deoliveira\OneDrive - Hyva Global\Área de Trabalho\asdasd\Folha_Operação\Analise_Folha_Operação_2s_2026.xlsx"
 )
@@ -432,6 +448,87 @@ def validar_config_para_executar(itens):
 # =============================================================================
 # 8. JANELAS E ESPERAS
 # =============================================================================
+_REFS = {}
+
+
+def _dif(a, b):
+    return ImageStat.Stat(ImageChops.difference(a, b)).mean[0]
+
+
+def _visual_ativo():
+    return bool(CONFERENCIA_VISUAL and REGIAO_BOTAO_INCLUIR and REGIAO_CAMPO_OPERACAO)
+
+
+def _carregar_refs():
+    if _REFS:
+        return
+    for chave, arq, regiao in (("campo_azul", ARQ_REF_CAMPO_AZUL, REGIAO_CAMPO_OPERACAO),
+                               ("campo_semfoco", ARQ_REF_CAMPO_SEMFOCO,
+                                REGIAO_CAMPO_OPERACAO),
+                               ("botao_cinza", ARQ_REF_BOTAO_CINZA, REGIAO_BOTAO_INCLUIR)):
+        if not os.path.exists(arq):
+            raise FileNotFoundError(
+                f"Imagem de referência não encontrada: {arq}")
+        img = Image.open(arq).convert("L")
+        if img.size != (regiao[2], regiao[3]):
+            raise ValueError(f"{arq} tem tamanho {img.size}, mas a região configurada é {regiao[2:]}. "
+                             f"Use a mesma região com que as imagens foram salvas.")
+        _REFS[chave] = img
+
+
+def _medir_estado():
+    """Classifica o que está na tela: PRONTO_FOCO, PRONTO_SEM_FOCO, PREENCHIDO ou DESCONHECIDO."""
+    campo = pyautogui.screenshot(region=REGIAO_CAMPO_OPERACAO).convert("L")
+    botao = pyautogui.screenshot(region=REGIAO_BOTAO_INCLUIR).convert("L")
+    d_azul = _dif(campo, _REFS["campo_azul"])
+    d_sem = _dif(campo, _REFS["campo_semfoco"])
+    d_bot = _dif(botao, _REFS["botao_cinza"])
+    cinza = d_bot <= LIMIAR_BOTAO
+    if cinza and d_azul <= LIMIAR_CAMPO:
+        estado = "PRONTO_FOCO"          # Operação azul + Incluir cinza
+    elif cinza and d_sem <= LIMIAR_CAMPO:
+        estado = "PRONTO_SEM_FOCO"      # Operação vazia sem azul + Incluir cinza
+    elif not cinza and d_azul > LIMIAR_CAMPO and d_sem > LIMIAR_CAMPO:
+        # Incluir preto + Operação diferente dos dois estados vazios
+        estado = "PREENCHIDO"
+    else:
+        estado = "DESCONHECIDO"
+    return estado, d_azul, d_sem, d_bot
+
+
+def _esperar_estado(aceitos, descricao):
+    """Espera o estado da tela estar em 'aceitos' por duas leituras seguidas. Estoura com erro se não chegar."""
+    if not _visual_ativo():
+        return
+    _carregar_refs()
+    limite = time.time() + TIMEOUT_ESTADO
+    seguidas, ultimo = 0, ("-", 0, 0, 0)
+    while time.time() < limite:
+        if janela_aberta(TITULO_ERRO):
+            raise RuntimeError(f"Janela 'ERRO' apareceu {descricao}")
+        ultimo = _medir_estado()
+        if ultimo[0] in aceitos:
+            seguidas += 1
+            if seguidas >= 2:           # duas leituras seguidas, para não pegar um repaint no meio
+                log.info(f"Estado {ultimo[0]} (campo azul {ultimo[1]:.2f} / sem foco {ultimo[2]:.2f} "
+                         f"/ botão {ultimo[3]:.2f})")
+                return
+        else:
+            seguidas = 0
+        time.sleep(0.3)
+    raise RuntimeError(f"Estado esperado {sorted(aceitos)} não confirmado em {TIMEOUT_ESTADO}s {descricao}. "
+                       f"Último: {ultimo[0]} (campo azul {ultimo[1]:.2f} / sem foco {ultimo[2]:.2f} / botão {ultimo[3]:.2f}). "
+                       f"ERP travado, clique perdido ou algo cobrindo a tela")
+
+
+def esperar_pronto(descricao=""):
+    _esperar_estado({"PRONTO_FOCO", "PRONTO_SEM_FOCO"}, descricao)
+
+
+def esperar_preenchido(descricao=""):
+    _esperar_estado({"PREENCHIDO"}, descricao)
+
+
 def janela_aberta(titulo):
     return any(w.title.strip() == titulo for w in gw.getWindowsWithTitle(titulo))
 
@@ -627,9 +724,12 @@ def tentar_abrir_inclusao(primeira_tentativa):
     try:
         esperar_janela(TITULO_OPERACOES, True, timeout=TIMEOUT_TENTATIVA_INCLUIR,
                        descricao="(abrir tela de operações)")
-        return True
     except RuntimeError:
         return False
+    # deixa a tela terminar de desenhar
+    pausa(ESPERA_APOS_CAMPO * 2)
+    esperar_pronto("(tela de operações recém-aberta)")
+    return True
 
 
 def iniciar_inclusao():
@@ -658,6 +758,8 @@ def iniciar_inclusao():
 def preencher_operacao_generica(op):
     """Preenchimento comum a subcentros e CCD (a tela é a mesma)."""
     escrever_em("operacao", op["operacao"])
+    esperar_preenchido(
+        "(depois de preencher Operação: o ERP não liberou os demais campos)")
     escrever_em("subcentro", op["subcentro"])
     escrever_em("qualificacao", op["qualificacao"])
     escrever_em("tempo_execucao", op["tempo"])
@@ -669,6 +771,7 @@ def incluir_operacao():
     pausa(ESPERA_APOS_INCLUIR)
     esperar_janela(TITULO_OPERACOES, True,
                    descricao="(após Incluir, a tela deveria continuar aberta)")
+    esperar_pronto("(depois do Incluir: o ERP não terminou de limpar)")
 
 
 def processar_subcentro(op):
