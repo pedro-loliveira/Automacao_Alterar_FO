@@ -70,21 +70,28 @@ LIMITE_ITENS = 1
 # setas p/ baixo antes do Incluir da tela principal (só em MODO_TESTE)
 TESTE_SETA_BAIXO = 4
 # multiplica TODAS as esperas fixas e o PAUSE
-MULT_ESPERA = 2.0 if MODO_TESTE else 1.0
+MULT_ESPERA = 1.5 if MODO_TESTE else 0.5
 
 # ----- Segurança -----
 pyautogui.FAILSAFE = True       # mouse no canto superior esquerdo aborta o script
 CONTAGEM_REGRESSIVA = 5       # segundos de espera antes de começar a clicar
 MAX_EXCLUSOES_SEGURANCA = 30    # nunca excluir mais que isso por item
 
+# exclusões extras permitidas se o Incluir não abrir (sobrou linha)
+MAX_EXCLUSOES_EXTRAS = 3
+# segundos esperando a tela de operações abrir em cada tentativa
+TIMEOUT_TENTATIVA_INCLUIR = 8
+# folga antes de clicar na linha_1 (a grade precisa terminar de atualizar)
+ESPERA_ANTES_LINHA1 = 2.0
+
 # ----- Velocidade: ações do PyAutoGUI -----
 # pausa automática depois de CADA ação (clique, tecla, etc.)
-pyautogui.PAUSE = 1.0 * MULT_ESPERA
-INTERVALO_DIGITACAO = 0.08            # segundos entre cada tecla digitada
+pyautogui.PAUSE = 0.8 * MULT_ESPERA
+INTERVALO_DIGITACAO = 0.06            # segundos entre cada tecla digitada
 
 # ----- Velocidade: preenchimento dos campos -----
-ESPERA_APOS_CAMPO = 1.0         # folga depois de clicar/preencher cada campo
-ESPERA_APOS_TAB_CAMPO = 1.0     # folga depois do TAB que libera os campos seguintes
+ESPERA_APOS_CAMPO = 0.8         # folga depois de clicar/preencher cada campo
+ESPERA_APOS_TAB_CAMPO = 0.8     # folga depois do TAB que libera os campos seguintes
 TAB_APOS_CAMPO = {"operacao"}   # campos que exigem TAB depois de digitar
 ESPERA_APOS_TAB = 0.5           # folga entre os 3 TABs depois de digitar o Produto
 
@@ -92,11 +99,11 @@ ESPERA_APOS_TAB = 0.5           # folga entre os 3 TABs depois de digitar o Prod
 # pausa antes de confirmar o aviso (só usada se TITULO_AVISO = None)
 ESPERA_AVISO_FIXA = 2.0
 # folga depois que a janela principal voltou da exclusão
-ESPERA_POS_EXCLUIR = 1.0
+ESPERA_POS_EXCLUIR = 1.4
 
 # ----- Velocidade: inclusão -----
 # tempo do ERP "travar" e limpar os campos depois do Incluir
-ESPERA_APOS_INCLUIR = 5.0
+ESPERA_APOS_INCLUIR = 2.0
 
 # ----- Timeouts e estados das janelas -----
 # máximo esperando uma janela abrir/fechar (antes de parar com erro)
@@ -111,7 +118,7 @@ TABS_ANTES_REV_FO = 2
 # depois de digitar a REV.FO, 1 TAB para sair do campo
 TABS_APOS_REV_FO = 1
 # tempo p/ o ERP validar a REV.FO e mostrar erro, se houver
-ESPERA_VALIDACAO_REV = 2.0
+ESPERA_VALIDACAO_REV = 1.0
 # tecla que fecha o aviso de erro (CONFIRMAR)
 TECLA_FECHAR_AVISO = "enter"
 # False: itens de itens_com_erro.txt são pulados na próxima execução
@@ -124,27 +131,51 @@ ARQ_LOG = "automacao_folha.log"
 
 PENDENTE = "PREENCHER"
 
+# segundos esperando a tela de exclusão abrir; se não abrir, Excluir está desabilitado
+TIMEOUT_ABRIR_EXCLUIR = 5
+
 # =============================================================================
 # 3. COORDENADAS  (None = ainda não preenchido; NÃO inventei nenhuma)
 #    Dica: rode `python -c "import pyautogui; pyautogui.displayMousePosition()"`
 # =============================================================================
+
+# Monitor 2
+# COORDENADAS = {
+#     # janela principal
+#     "produto": (2090, 336),
+#     "linha_1": (2173, 455),
+#     "excluir_folha": (2514, 832),       # Excluir da tela principal
+#     "incluir_folha": (2258, 832),       # Incluir da tela principal
+#     "cancelar": (2678, 832),            # Cancelar da tela principal
+#     # janela de operações
+#     "excluir_operacao": (2547, 613),
+#     "ok": (2534, 617),
+#     "operacao": (2082, 400),
+#     "subcentro": (2182, 468),
+#     "qualificacao": (2434, 497),
+#     "tempo_execucao": (2487, 526),
+#     "numero_operadores": (2628, 555),
+#     "incluir_operacao": (2381, 619),
+#     "sair": (2670, 276),
+# }
+# Monitor 1
 COORDENADAS = {
     # janela principal
-    "produto": (2090, 336),
-    "linha_1": (2173, 455),
-    "excluir_folha": (2514, 832),       # Excluir da tela principal
-    "incluir_folha": (2258, 832),       # Incluir da tela principal
-    "cancelar": (2678, 832),            # Cancelar da tela principal
+    "produto": (218, 130),
+    "linha_1": (203, 249),
+    "excluir_folha": (579, 624),       # Excluir da tela principal
+    "incluir_folha": (353, 624),       # Incluir da tela principal
+    "cancelar": (761, 624),            # Cancelar da tela principal
     # janela de operações
-    "excluir_operacao": (2547, 613),
-    "ok": (2534, 617),
-    "operacao": (2082, 400),
-    "subcentro": (2182, 468),
-    "qualificacao": (2434, 497),
-    "tempo_execucao": (2487, 526),
-    "numero_operadores": (2628, 555),
-    "incluir_operacao": (2381, 619),
-    "sair": (2670, 276),
+    "excluir_operacao": (627, 410),
+    "ok": (932, 586),
+    "operacao": (156, 191),
+    "subcentro": (243, 263),
+    "qualificacao": (513, 291),
+    "tempo_execucao": (521, 323),
+    "numero_operadores": (715, 347),
+    "incluir_operacao": (461, 409),
+    "sair": (750, 66),
 }
 
 # =============================================================================
@@ -508,6 +539,7 @@ def selecionar_produto(item):
 
 def excluir_operacao():
     """Um ciclo de exclusão. Só retorna quando voltou para a janela principal."""
+    pausa(ESPERA_ANTES_LINHA1)       # o ERP é lento para redesenhar a grade depois da exclusão anterior
     clicar("linha_1")
     clicar("excluir_folha")
     esperar_janela(TITULO_OPERACOES, True,
@@ -533,8 +565,41 @@ def excluir_operacao():
     pausa(ESPERA_POS_EXCLUIR)
 
 
+def tentar_excluir_operacao():
+    """Um ciclo de exclusão. Retorna False se o Excluir não abriu a janela (grade vazia ou ERP ainda atualizando)."""
+    pausa(ESPERA_ANTES_LINHA1)       # o ERP é lento para redesenhar a grade
+    clicar("linha_1")
+    clicar("excluir_folha")
+    try:
+        esperar_janela(TITULO_OPERACOES, True, timeout=TIMEOUT_ABRIR_EXCLUIR,
+                       descricao="(abrir tela de exclusão)")
+    except RuntimeError:
+        return False
+
+    clicar("excluir_operacao")
+
+    # Espera o aviso abrir ANTES de confirmar, senão o ERP trava
+    if TITULO_AVISO:
+        esperar_janela(TITULO_AVISO, True,
+                       descricao="(abrir aviso de confirmação)")
+        pausa(0.5)
+    else:
+        pausa(ESPERA_AVISO_FIXA)
+
+    clicar("ok")
+
+    if TITULO_AVISO:
+        esperar_janela(TITULO_AVISO, False,
+                       descricao="(fechar aviso após confirmar)")
+    esperar_janela(TITULO_OPERACOES, False, descricao="(fechar tela após OK)")
+    esperar_janela(TITULO_PRINCIPAL, True,
+                   descricao="(voltar à janela principal)")
+    pausa(ESPERA_POS_EXCLUIR)
+    return True
+
+
 def excluir_todas_operacoes(item):
-    """Exclusões = subcentros da planilha + KANBAN/CCD que existem para o item."""
+    """Faz as exclusões esperadas (subcentros + KANBAN/CCD). Para antes se o Excluir deixar de abrir."""
     qtd_subs = len(item["subcentros"])
     extras = item["existentes_extras"]
     total = qtd_subs + len(extras)
@@ -545,18 +610,49 @@ def excluir_todas_operacoes(item):
         f"Iniciando exclusão: {qtd_subs} subcentros + extras {extras or 'nenhum'} = {total}")
     for i in range(1, total + 1):
         log.info(f"Exclusão {i}/{total}")
-        excluir_operacao()
+        if not tentar_excluir_operacao():
+            log.warning(f"Excluir não abriu na exclusão {i}/{total}: grade provavelmente já vazia "
+                        f"(a planilha esperava mais operações que o ERP tinha)")
+            break
 
 
-def iniciar_inclusao():
+def tentar_abrir_inclusao(primeira_tentativa):
+    """Clica na linha 1 e em Incluir. True se a tela de operações abriu (grade vazia)."""
     clicar("linha_1")
-    if MODO_TESTE and TESTE_SETA_BAIXO:
+    if MODO_TESTE and TESTE_SETA_BAIXO and primeira_tentativa:
         log.info(f"TESTE: pressionando seta para baixo {TESTE_SETA_BAIXO}x")
         for _ in range(TESTE_SETA_BAIXO):
             pyautogui.press("down")
     clicar("incluir_folha")
-    esperar_janela(TITULO_OPERACOES, True,
-                   descricao="(abrir tela de operações)")
+    try:
+        esperar_janela(TITULO_OPERACOES, True, timeout=TIMEOUT_TENTATIVA_INCLUIR,
+                       descricao="(abrir tela de operações)")
+        return True
+    except RuntimeError:
+        return False
+
+
+def iniciar_inclusao():
+    # folga: o ERP trava depois da última exclusão
+    pausa(ESPERA_POS_EXCLUIR * 2)
+    for extra in range(MAX_EXCLUSOES_EXTRAS + 1):
+        if tentar_abrir_inclusao(primeira_tentativa=(extra == 0)):
+            if extra:
+                log.warning(
+                    f"Incluir só abriu depois de {extra} tentativa(s) extra(s)")
+            return
+        if extra == MAX_EXCLUSOES_EXTRAS:
+            break
+        log.warning(
+            f"Incluir não abriu (sobrou linha ou ERP lento). Tentativa extra {extra + 1}/{MAX_EXCLUSOES_EXTRAS}")
+        if tentar_excluir_operacao():
+            log.warning(
+                "Uma exclusão extra foi feita: a contagem da planilha ficou menor que o ERP")
+        else:
+            # Excluir não abriu: ERP ainda atualizando, dá mais tempo
+            pausa(ESPERA_POS_EXCLUIR * 2)
+    raise RuntimeError(
+        f"Incluir não abriu mesmo após {MAX_EXCLUSOES_EXTRAS} tentativas extras")
 
 
 def preencher_operacao_generica(op):
