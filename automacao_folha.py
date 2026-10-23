@@ -13,6 +13,8 @@ Dependências:
 # =============================================================================
 # 1. IMPORTS
 # =============================================================================
+
+import unicodedata
 import os
 import re
 import sys
@@ -31,52 +33,55 @@ import warnings
 
 from PIL import Image, ImageChops, ImageStat
 warnings.filterwarnings("ignore", message="Data Validation extension")
+warnings.filterwarnings(
+    "ignore", message="32-bit application should be automated")
 
+try:
+    from pywinauto import Application
+    PYWINAUTO_DISPONIVEL = True
+except ImportError:
+    PYWINAUTO_DISPONIVEL = False
 # =============================================================================
 # 2. CONFIGURAÇÃO GERAL  (edite aqui)
 # =============================================================================
-# False desliga toda a checagem por imagem
-CONFERENCIA_VISUAL = True
-REGIAO_BOTAO_INCLUIR = (424, 397, 76, 25)
-# cole a tupla impressa pelo teste: (x, y, largura, altura)
-REGIAO_CAMPO_OPERACAO = None
-LIMIAR_BOTAO = 6.0      # cinza x preto = 12,35 (ruído 0,00)
-# "igual à referência" = diferença <= 3 (ruído 0,00; menor distância entre estados 18,55)
-LIMIAR_CAMPO = 3.0
-# segundos esperando o estado esperado (sem multiplicador)
-TIMEOUT_ESTADO = 40
-ARQ_REF_CAMPO_AZUL = "ref_op_A_azul.png"        # Operação azul, janela com foco
-ARQ_REF_CAMPO_SEMFOCO = "ref_op_B_semfoco.png"  # Operação vazia, janela sem foco
-ARQ_REF_BOTAO_CINZA = "ref_botao_A_azul.png"    # Incluir cinza
 
+# ----- Planilha -----
 CAMINHO_PLANILHA = (
     r"C:\Users\p.deoliveira\OneDrive - Hyva Global\Área de Trabalho\asdasd\Folha_Operação\Analise_Folha_Operação_2s_2026.xlsx"
 )
 ABA = "Ordem_mais_Produzida"
-LINHA_CABECALHO = 2          # linha dos títulos (A..N)
-COLUNA_ITEM = "Rótulos de Linha"
+LINHA_CABECALHO = 2                  # linha dos títulos (A..N)
+COLUNA_ITEM = "Rótulos de Linha"     # cabeçalho da coluna com o código do item
+# cabeçalho da coluna com a REV.FO (máximo da consulta)
+COLUNA_REV_FO = "1.AFOSC_REV_FO"
 
-# Colunas de subcentros NA ORDEM de cadastro (D -> N). CCD é tratado à parte.
+# Subcentros NA ORDEM de cadastro (D -> N). O CCD é calculado pelo script.
 COLUNAS_SUBCENTROS = [
     "CDSE", "CDTE01", "CDPL", "CDPL01", "CDPL02",
     "CDVD01", "CDVD02", "CDCA01", "CDCA02", "CDOX", "CDFR",
 ]
+# só contam exclusões; nunca são recadastrados
 COLUNAS_MAPEAMENTO = ["KANBAN", "CCD"]
-# =============================================================================
-# CONFIGURAÇÃO GERAL
-# =============================================================================
 
 # ----- Arquivos -----
 # cache da planilha; apague para forçar nova leitura
 ARQ_CACHE = "cache_planilha.json"
+# itens já feitos (são pulados na próxima execução)
+ARQ_CHECKPOINT = "itens_concluidos.txt"
+# itens recusados pelo ERP (REV.FO inválida etc.)
+ARQ_ERROS = "itens_com_erro.txt"
+ARQ_LOG = "automacao_folha.log"
+REPROCESSAR_ERROS = False                # False: itens de ARQ_ERROS são pulados
 
 # ----- Títulos das janelas do ERP -----
 # tela com Produto e linha_1
 TITULO_PRINCIPAL = "Atualiza Folha de Operação"
 # tela de Incluir/Excluir operação
 TITULO_OPERACOES = "Atualiza Operações da Folha de Operação"
-# aviso após Excluir (None = não espera a janela, usa só ESPERA_AVISO_FIXA)
+# confirmação após Excluir (None = não espera, usa ESPERA_AVISO_FIXA)
 TITULO_AVISO = "Aviso"
+# janela de erro do ERP (Revisão inválida, Registro já cadastrado...)
+TITULO_ERRO = "ERRO"
 
 # ----- Modo teste -----
 # True: pede ENTER antes de cada item, dobra as esperas, usa a seta p/ baixo
@@ -85,71 +90,90 @@ MODO_TESTE = False
 LIMITE_ITENS = 1
 # setas p/ baixo antes do Incluir da tela principal (só em MODO_TESTE)
 TESTE_SETA_BAIXO = 4
-# multiplica TODAS as esperas fixas e o PAUSE
-MULT_ESPERA = 1.5 if MODO_TESTE else 0.5
 
 # ----- Segurança -----
-pyautogui.FAILSAFE = True       # mouse no canto superior esquerdo aborta o script
-CONTAGEM_REGRESSIVA = 5       # segundos de espera antes de começar a clicar
-MAX_EXCLUSOES_SEGURANCA = 30    # nunca excluir mais que isso por item
+pyautogui.FAILSAFE = True   # mouse no canto superior esquerdo aborta o script
+CONTAGEM_REGRESSIVA = 5     # segundos antes de começar a clicar
+MAX_EXCLUSOES_SEGURANCA = 30   # nunca excluir mais que isso por item
 
-# exclusões extras permitidas se o Incluir não abrir (sobrou linha)
-MAX_EXCLUSOES_EXTRAS = 3
-# segundos esperando a tela de operações abrir em cada tentativa
-TIMEOUT_TENTATIVA_INCLUIR = 8
-# folga antes de clicar na linha_1 (a grade precisa terminar de atualizar)
-ESPERA_ANTES_LINHA1 = 2.0
-
-# ----- Velocidade: ações do PyAutoGUI -----
-# pausa automática depois de CADA ação (clique, tecla, etc.)
+# ----- Velocidade geral (MULT_ESPERA precisa vir antes do PAUSE) -----
+# multiplica as pausas (pausa()) e o PAUSE
+MULT_ESPERA = 1.5 if MODO_TESTE else 0.5
+# pausa automática depois de CADA ação do PyAutoGUI
 pyautogui.PAUSE = 0.8 * MULT_ESPERA
-INTERVALO_DIGITACAO = 0.06            # segundos entre cada tecla digitada
+INTERVALO_DIGITACAO = 0.06                 # segundos entre cada tecla digitada
 
-# ----- Velocidade: preenchimento dos campos -----
-ESPERA_APOS_CAMPO = 0.8         # folga depois de clicar/preencher cada campo
-ESPERA_APOS_TAB_CAMPO = 0.8     # folga depois do TAB que libera os campos seguintes
-TAB_APOS_CAMPO = {"operacao"}   # campos que exigem TAB depois de digitar
-ESPERA_APOS_TAB = 0.5           # folga entre os 3 TABs depois de digitar o Produto
+# ----- Preenchimento dos campos -----
+ESPERA_APOS_CAMPO = 0.8      # folga depois de clicar/preencher cada campo
+ESPERA_APOS_TAB_CAMPO = 0.8  # folga depois do TAB de um campo
+TAB_APOS_CAMPO = {"operacao", "subcentro", "qualificacao",
+                  "tempo_execucao"}  # campos que validam com TAB
+# Backspace/Delete por campo (maior que o maior conteúdo possível)
+QTD_APAGAR = 25
 
-# ----- Velocidade: exclusão -----
+# ----- Produto e REV.FO -----
+TABS_ANTES_REV_FO = 2        # Produto -> TAB (REV) -> TAB (chega na REV.FO)
+TABS_APOS_REV_FO = 1         # depois de digitar a REV.FO, 1 TAB para sair do campo
+ESPERA_APOS_TAB = 0.8        # folga entre cada TAB do Produto/REV.FO
+ESPERA_VALIDACAO_REV = 1.5   # segundos olhando se a janela ERRO abre depois da REV.FO
+
+# ----- Exclusão -----
+# folga antes de clicar na linha_1 (a grade precisa redesenhar)
+ESPERA_ANTES_LINHA1 = 2.0
 # pausa antes de confirmar o aviso (só usada se TITULO_AVISO = None)
 ESPERA_AVISO_FIXA = 2.0
-# folga depois que a janela principal voltou da exclusão
-ESPERA_POS_EXCLUIR = 1.4
+ESPERA_POS_EXCLUIR = 1.4     # folga depois que a janela principal voltou da exclusão
+# esperando a tela de exclusão abrir; se não abrir, Excluir está desabilitado
+TIMEOUT_ABRIR_EXCLUIR = 5
+# esperando a tela fechar depois do OK da exclusão (o ERP trava aqui)
+TIMEOUT_POS_OK = 45
+# tentativas extras se o Incluir não abrir (sobrou linha)
+MAX_EXCLUSOES_EXTRAS = 3
+# esperando a tela de operações abrir em cada tentativa
+TIMEOUT_TENTATIVA_INCLUIR = 8
 
-# ----- Velocidade: inclusão -----
+# ----- Inclusão e correção de erros -----
 # tempo do ERP "travar" e limpar os campos depois do Incluir
 ESPERA_APOS_INCLUIR = 2.0
+ESPERA_ERRO_INCLUIR = 1.5    # segundos olhando se a ERRO abre depois do Incluir
+MAX_CORRECOES = 3           # correções por operação antes de parar
+MAX_INCREMENTOS_OPERACAO = 9   # Operação já cadastrada: 0.010 -> 0.019
 
-# ----- Timeouts e estados das janelas -----
-# máximo esperando uma janela abrir/fechar (antes de parar com erro)
-TIMEOUT_JANELA = 20
+# Texto do erro (sem acento, minúsculo) -> campo que precisa de correção
+CAMPOS_POR_MENSAGEM = [
+    ("registro ja cadastrado", "operacao"),
+    ("subcentro", "subcentro"),
+    ("qualificacao", "qualificacao"),
+    ("tempo de execucao", "tempo_execucao"),
+    ("revisao", "rev_fo"),
+]
+
+# ----- Janela de ERRO: como fechar -----
+# (x, y) do botão OK; None = fecha com TECLA_FECHAR_AVISO
+COORD_OK_ERRO = None
+TECLA_FECHAR_AVISO = "enter"
+
+# ----- Janelas: timeouts e estados -----
+TIMEOUT_JANELA = 20          # máximo esperando uma janela abrir/fechar
 # a tela principal continua aberta depois do Cancelar?
 PRINCIPAL_ABERTA_APOS_CANCELAR = True
 
-# cabeçalho da coluna com a REV.FO correta (máximo da consulta)
-COLUNA_REV_FO = "1.AFOSC_REV_FO"
-# Produto -> TAB (REV) -> TAB (chega na REV.FO)
-TABS_ANTES_REV_FO = 2
-# depois de digitar a REV.FO, 1 TAB para sair do campo
-TABS_APOS_REV_FO = 1
-# tempo p/ o ERP validar a REV.FO e mostrar erro, se houver
-ESPERA_VALIDACAO_REV = 1.0
-# tecla que fecha o aviso de erro (CONFIRMAR)
-TECLA_FECHAR_AVISO = "enter"
-# False: itens de itens_com_erro.txt são pulados na próxima execução
-REPROCESSAR_ERROS = False
-ARQ_ERROS = "itens_com_erro.txt"
-TITULO_ERRO = "ERRO"
+# ----- Conferência por imagem (só vale se as funções de imagem estiverem no arquivo) -----
+CONFERENCIA_VISUAL = True    # False desliga toda a checagem por imagem
+# botão Incluir da tela de operações
+REGIAO_BOTAO_INCLUIR = (424, 397, 76, 25)
+# cole a tupla impressa pelo teste: (x, y, largura, altura)
+REGIAO_CAMPO_OPERACAO = None
+LIMIAR_BOTAO = 6.0           # cinza x preto = 12,35 (ruído 0,00)
+# "igual à referência" = diferença <= 3 (menor distância entre estados: 18,55)
+LIMIAR_CAMPO = 3.0
+TIMEOUT_ESTADO = 40          # esperando o estado esperado da tela
+ARQ_REF_CAMPO_AZUL = "ref_op_A_azul.png"        # Operação azul, janela com foco
+ARQ_REF_CAMPO_SEMFOCO = "ref_op_B_semfoco.png"  # Operação vazia, janela sem foco
+ARQ_REF_BOTAO_CINZA = "ref_botao_A_azul.png"    # Incluir cinza
 
-ARQ_CHECKPOINT = "itens_concluidos.txt"
-ARQ_LOG = "automacao_folha.log"
-
-PENDENTE = "PREENCHER"
-
-# segundos esperando a tela de exclusão abrir; se não abrir, Excluir está desabilitado
-TIMEOUT_ABRIR_EXCLUIR = 5
-
+# ----- Outros -----
+PENDENTE = "PREENCHER"       # marca regras ainda não preenchidas em REGRAS_SUBCENTROS
 # =============================================================================
 # 3. COORDENADAS  (None = ainda não preenchido; NÃO inventei nenhuma)
 #    Dica: rode `python -c "import pyautogui; pyautogui.displayMousePosition()"`
@@ -451,6 +475,54 @@ def validar_config_para_executar(itens):
 _REFS = {}
 
 
+def _extrair_texto_via_backend(backend):
+    """Lê os textos da janela de erro com um backend do pywinauto ('uia' ou 'win32')."""
+    try:
+        app = Application(backend=backend).connect(title_re=f"^{TITULO_ERRO}$")
+        win = app.window(title_re=f"^{TITULO_ERRO}$")
+        textos = []
+        for ctrl in win.descendants():
+            try:
+                texto = ctrl.window_text().strip()
+                if texto:
+                    textos.append(texto)
+            except Exception:
+                continue
+        return " | ".join(textos) if textos else None
+    except Exception:
+        return None
+
+
+def ler_texto_janela_erro():
+    """Devolve o texto da janela de erro, ou None se nenhum dos dois backends conseguir."""
+    if not PYWINAUTO_DISPONIVEL:
+        return None
+    return _extrair_texto_via_backend("uia") or _extrair_texto_via_backend("win32")
+
+
+def _norm(txt):
+    return "".join(c for c in unicodedata.normalize("NFKD", txt)
+                   if not unicodedata.combining(c)).lower()
+
+
+def campo_do_erro(mensagem):
+    m = _norm(mensagem)
+    for trecho, campo in CAMPOS_POR_MENSAGEM:
+        if trecho in m:
+            return campo
+    return None
+
+
+def apareceu_erro(espera):
+    """True se a janela ERRO está aberta ou abrir dentro do prazo."""
+    limite = time.time() + espera
+    while time.time() < limite:
+        if janela_aberta(TITULO_ERRO):
+            return True
+        time.sleep(0.1)
+    return False
+
+
 def _dif(a, b):
     return ImageStat.Stat(ImageChops.difference(a, b)).mean[0]
 
@@ -574,11 +646,71 @@ def duplo_clicar(nome):
     pyautogui.doubleClick(x, y)
 
 
-def escrever_em(nome_campo, texto):
-    """Clica no campo, limpa, digita e, se o campo exigir, aperta TAB."""
-    clicar(nome_campo)
+def fechar_janela_erro():
+    for _ in range(3):
+        if COORD_OK_ERRO:
+            pyautogui.click(*COORD_OK_ERRO)
+        else:
+            pyautogui.press(TECLA_FECHAR_AVISO)
+        time.sleep(1.5)
+        if not janela_aberta(TITULO_ERRO):
+            return
+    raise RuntimeError(
+        "Janela 'ERRO' não fechou (confira COORD_OK_ERRO / TECLA_FECHAR_AVISO)")
+
+
+def apareceu_erro(espera):
+    """True se a janela ERRO está aberta ou abrir dentro do prazo."""
+    limite = time.time() + espera
+    while time.time() < limite:
+        if janela_aberta(TITULO_ERRO):
+            return True
+        time.sleep(0.1)
+    return False
+
+
+# Como limpar cada campo: "duplo" (duplo clique + Backspace) ou "backspace" (End + Backspace/Delete)
+LIMPEZA_CAMPO = {
+    "operacao": "duplo",
+    "subcentro": "duplo",
+    "qualificacao": "duplo",
+    "tempo_execucao": "duplo",     # único testado: só o duplo clique apagou
+    "numero_operadores": "duplo",
+}
+
+
+def limpar_campo(nome):
+    """Apaga o conteúdo do campo pelo método configurado."""
+    if LIMPEZA_CAMPO.get(nome, "duplo") == "duplo":
+        duplo_clicar(nome)
+        pyautogui.press("backspace")
+    else:
+        clicar(nome)
+        pyautogui.press("end")
+        pyautogui.press("backspace", presses=QTD_APAGAR, interval=0.02)
+        pyautogui.press("delete", presses=QTD_APAGAR, interval=0.02)
+
+
+def fechar_janela_erro():
+    for _ in range(3):
+        if COORD_OK_ERRO:
+            pyautogui.click(*COORD_OK_ERRO)
+        else:
+            pyautogui.press(TECLA_FECHAR_AVISO)
+        time.sleep(1.5)
+        if not janela_aberta(TITULO_ERRO):
+            return
+    raise RuntimeError(
+        "Janela 'ERRO' não fechou (confira COORD_OK_ERRO / TECLA_FECHAR_AVISO)")
+
+
+def escrever_em(nome_campo, texto, limpar=False):
+    """Digita no campo. Só apaga antes se limpar=True (correções). TAB nos campos que validam."""
+    if limpar:
+        limpar_campo(nome_campo)
+    else:
+        clicar(nome_campo)
     pausa(ESPERA_APOS_CAMPO)
-    pyautogui.hotkey("ctrl", "a")
     pyautogui.write(str(texto), interval=INTERVALO_DIGITACAO)
     if nome_campo in TAB_APOS_CAMPO:
         pyautogui.press("tab")
@@ -587,18 +719,57 @@ def escrever_em(nome_campo, texto):
         pausa(ESPERA_APOS_CAMPO)
 
 
+def preencher_campos(op, limpar=False):
+    for campo, valor in (("operacao", op["operacao"]),
+                         ("subcentro", op["subcentro"]),
+                         ("qualificacao", op["qualificacao"]),
+                         ("tempo_execucao", op["tempo"]),
+                         ("numero_operadores", op["operadores"])):
+        if janela_aberta(TITULO_ERRO):
+            return                    # erro aberto: não digita no escuro, o laço principal trata
+        escrever_em(campo, valor, limpar=limpar)
+
 # ==========================================0027===================================
 # 10. ETAPAS DO PROCESSO
 # =============================================================================
+
+
+def fechar_janela_erro():
+    for _ in range(3):
+        if COORD_OK_ERRO:
+            pyautogui.press(*COORD_OK_ERRO)
+        else:
+            pyautogui.press(TECLA_FECHAR_AVISO)
+        time.sleep(1.5)
+        if not janela_aberta(TITULO_ERRO):
+            return
+    raise RuntimeError(
+        "Janela 'ERRO' não fechou (confira COORD_OK_ERRO / TECLA_FECHAR_AVISO)")
+
+
+def tratar_janela_erro(codigo, rev_fo, recuperavel=True):
+    """Se a janela ERRO estiver aberta: fecha, cancela a tela e pula o item (se ele ainda não foi alterado)."""
+    if not janela_aberta(TITULO_ERRO):
+        return
+    fechar_janela_erro()
+    clicar("cancelar")
+    pausa(ESPERA_POS_EXCLUIR)
+    motivo = f"janela ERRO aberta (REV.FO {rev_fo if rev_fo is not None else '(ERP)'})"
+    if recuperavel:
+        raise ItemComErro(codigo, motivo)
+    raise ErroAutomacao(codigo, "-", "exclusão", motivo +
+                        " com o item já parcialmente excluído")
+
+
 def selecionar_produto(item):
     # rev_fo None = deixar o ERP preencher
     codigo, rev_fo = item["codigo"], item.get("rev_fo")
 
     verificar_janela()
-    esperar_janela(TITULO_PRINCIPAL, True,
-                   descricao="(antes de selecionar produto)")
-    esperar_janela(TITULO_OPERACOES, False,
-                   descricao="(tela de operações já aberta antes do produto)")
+    esperar_janela(TITULO_OPERACOES, False, timeout=TIMEOUT_POS_OK,
+                   descricao="(fechar tela após OK)")
+    esperar_janela(TITULO_PRINCIPAL, True, timeout=TIMEOUT_POS_OK,
+                   descricao="(voltar à janela principal)")
     # duplo clique seleciona o código antigo inteiro
     duplo_clicar("produto")
     pausa(ESPERA_APOS_CAMPO)
@@ -619,18 +790,9 @@ def selecionar_produto(item):
         pausa(ESPERA_APOS_TAB)
 
     # Espera até ESPERA_VALIDACAO_REV segundos pela janela de ERRO
-    limite = time.time() + ESPERA_VALIDACAO_REV * MULT_ESPERA
+    limite = time.time() + ESPERA_VALIDACAO_REV       # sem MULT_ESPERA de propósito
     while time.time() < limite:
-        if janela_aberta(TITULO_ERRO):
-            pyautogui.press(TECLA_FECHAR_AVISO)
-            pausa(ESPERA_APOS_CAMPO)
-            if janela_aberta(TITULO_ERRO):
-                raise RuntimeError(
-                    "Janela 'ERRO' não fechou com a tecla configurada")
-            clicar("cancelar")
-            pausa(ESPERA_POS_EXCLUIR)
-            raise ItemComErro(
-                codigo, f"REV.FO {rev_fo if rev_fo is not None else '(ERP)'} recusada pelo ERP")
+        tratar_janela_erro(codigo, rev_fo)
         time.sleep(0.2)
 
 
@@ -708,6 +870,8 @@ def excluir_todas_operacoes(item):
     for i in range(1, total + 1):
         log.info(f"Exclusão {i}/{total}")
         if not tentar_excluir_operacao():
+            tratar_janela_erro(item["codigo"], item.get(
+                "rev_fo"), recuperavel=(i == 1))
             log.warning(f"Excluir não abriu na exclusão {i}/{total}: grade provavelmente já vazia "
                         f"(a planilha esperava mais operações que o ERP tinha)")
             break
@@ -755,34 +919,74 @@ def iniciar_inclusao():
         f"Incluir não abriu mesmo após {MAX_EXCLUSOES_EXTRAS} tentativas extras")
 
 
-def preencher_operacao_generica(op):
-    """Preenchimento comum a subcentros e CCD (a tela é a mesma)."""
-    escrever_em("operacao", op["operacao"])
-    esperar_preenchido(
-        "(depois de preencher Operação: o ERP não liberou os demais campos)")
-    escrever_em("subcentro", op["subcentro"])
-    escrever_em("qualificacao", op["qualificacao"])
-    escrever_em("tempo_execucao", op["tempo"])
-    escrever_em("numero_operadores", op["operadores"])
+def preencher_campos(op):
+    for campo, valor in (("operacao", op["operacao"]),
+                         ("subcentro", op["subcentro"]),
+                         ("qualificacao", op["qualificacao"]),
+                         ("tempo_execucao", op["tempo"]),
+                         ("numero_operadores", op["operadores"])):
+        if janela_aberta(TITULO_ERRO):
+            return                    # erro aberto: não digita no escuro, o laço principal trata
+        escrever_em(campo, valor)
 
 
-def incluir_operacao():
-    clicar("incluir_operacao")
-    pausa(ESPERA_APOS_INCLUIR)
+def _proxima_operacao(op, estado):
+    if op["coluna"] == "CCD":
+        raise RuntimeError("Operação 0.100 do CCD já cadastrada: sobrou um CCD antigo no ERP "
+                           "(as exclusões não limparam tudo)")
+    if estado["incrementos"] >= MAX_INCREMENTOS_OPERACAO:
+        raise RuntimeError(f"Operação {op['operacao']} continua já cadastrada após "
+                           f"{MAX_INCREMENTOS_OPERACAO} incrementos")
+    estado["incrementos"] += 1
+    novo = f"0.{int(op['operacao'].replace('.', '')) + 1:03d}"
+    log.warning(f"Operação {op['operacao']} já cadastrada, tentando {novo}")
+    op["operacao"] = novo
+
+
+def processar_operacao(op):
+    estado = {"incrementos": 0}
+    preencher_campos(op)
+    for tentativa in range(1, MAX_CORRECOES + 1):
+        # só clica em Incluir se não há erro aberto
+        if not janela_aberta(TITULO_ERRO):
+            clicar("incluir_operacao")
+            apareceu_erro(
+                max(ESPERA_ERRO_INCLUIR, ESPERA_APOS_INCLUIR * MULT_ESPERA))
+        if not janela_aberta(TITULO_ERRO):
+            break                                      # incluiu sem erro
+
+        t0 = time.time()
+        msg = ler_texto_janela_erro()
+        if msg is None:
+            raise RuntimeError("Janela ERRO aberta, mas não consegui ler o texto "
+                               "(pywinauto ausente ou controles não expostos)")
+        campo = campo_do_erro(msg)
+        log.warning(f"ERP recusou ({op['coluna']}): '{msg}' -> campo {campo or 'DESCONHECIDO'} "
+                    f"(correção {tentativa}/{MAX_CORRECOES}, leitura em {time.time() - t0:.1f}s)")
+        fechar_janela_erro()
+        if campo is None:
+            raise RuntimeError(f"Mensagem de erro sem campo mapeado: '{msg}'")
+        if campo == "rev_fo":
+            raise RuntimeError(f"Erro de REV.FO durante a inclusão: '{msg}'")
+        if campo == "operacao":
+            _proxima_operacao(op, estado)
+        # refaz todos, apagando o que ficou
+        preencher_campos(op, limpar=True)
+    else:
+        raise RuntimeError(
+            f"ERP continuou recusando {op['coluna']} após {MAX_CORRECOES} correções")
+
     esperar_janela(TITULO_OPERACOES, True,
                    descricao="(após Incluir, a tela deveria continuar aberta)")
-    esperar_pronto("(depois do Incluir: o ERP não terminou de limpar)")
 
 
 def processar_subcentro(op):
-    preencher_operacao_generica(op)
-    incluir_operacao()
+    processar_operacao(op)
 
 
 def processar_ccd(op):
-    # Lógica própria do CCD fica em calcular_ccd(); aqui só a execução.
-    preencher_operacao_generica(op)
-    incluir_operacao()
+    # A regra especial do CCD fica em calcular_ccd(); aqui só a execução.
+    processar_operacao(op)
 
 
 def finalizar_item():
